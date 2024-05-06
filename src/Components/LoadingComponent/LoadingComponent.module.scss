@@ -1,0 +1,35 @@
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85px;
+  height: 25px;
+  --g1: conic-gradient(from 90deg at left 3px top 3px, rgba(30, 12, 12, 0) 90deg, #dc8500 0);
+  --g2: conic-gradient(from -90deg at bottom 3px right 3px, rgba(52, 5, 5, 0) 90deg, #e36600 0);
+  background: var(--g1), var(--g1), var(--g1), var(--g2), var(--g2), var(--g2);
+  background-position: left, center, right;
+  background-repeat: no-repeat;
+  animation: l8 1s infinite;
+}
+
+@keyframes l8 {
+  0% {
+    background-size: 25px 100%, 25px 100%, 25px 100%
+  }
+  20% {
+    background-size: 25px 50%, 25px 100%, 25px 100%
+  }
+  40% {
+    background-size: 25px 50%, 25px 50%, 25px 100%
+  }
+  60% {
+    background-size: 25px 100%, 25px 50%, 25px 50%
+  }
+  80% {
+    background-size: 25px 100%, 25px 100%, 25px 50%
+  }
+  100% {
+    background-size: 25px 100%, 25px 100%, 25px 100%
+  }
+}
