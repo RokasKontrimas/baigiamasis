@@ -1,0 +1,360 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "name": "Mammals"
+    },
+    {
+      "id": "2",
+      "name": "Amphibians"
+    },
+    {
+      "id": "3",
+      "name": "Reptiles"
+    },
+    {
+      "id": "4",
+      "name": "Birds"
+    },
+    {
+      "id": "5",
+      "name": "Cats"
+    },
+    {
+      "id": "6",
+      "name": "Insects"
+    },
+    {
+      "id": "7",
+      "name": "Fish"
+    }
+  ],
+  "animals": [
+    {
+      "id": "1",
+      "imageUrl": "https://www.hdwallpapers.in/download/horizontal_wallpaper_featuring_a_majestic_elephant_standing_tall_in_african_landscape_at_sunset_hd_elephant-1920x1080.jpg",
+      "name": "African Elephant",
+      "species": "Loxodonta africana",
+      "habitat": "African savanna",
+      "conservation_status": "Vulnerable",
+      "description": "The African elephant is the largest land animal on Earth. They are known for their long tusks and distinctive trunk.",
+      "categoryId": "1"
+    },
+    {
+      "id": "2",
+      "imageUrl": "https://i.imgur.com/WxRpLSW.jpg",
+      "name": "Bengal Tiger",
+      "species": "Panthera tigris tigris",
+      "habitat": "Indian subcontinent",
+      "conservation_status": "Endangered",
+      "description": "The Bengal tiger is the most numerous tiger subspecies. They are known for their orange fur with black stripes and powerful build.",
+      "categoryId": "1"
+    },
+    {
+      "id": "3",
+      "imageUrl": "https://i.pinimg.com/originals/8d/fa/e0/8dfae0f3cc968057c9c400c660224f6a.jpg",
+      "name": "Snow Leopard",
+      "species": "Panthera uncia",
+      "habitat": "Mountain ranges of Central and South Asia",
+      "conservation_status": "Vulnerable",
+      "description": "The snow leopard is a large cat native to the mountain ranges of Central and South Asia. It is characterized by its thick fur and spotted coat.",
+      "categoryId": "1"
+    },
+    {
+      "id": "4",
+      "imageUrl": "https://wallpapercave.com/wp/wp5215434.jpg",
+      "name": "Giant Panda",
+      "species": "Ailuropoda melanoleuca",
+      "habitat": "Bamboo forests of China",
+      "conservation_status": "Endangered",
+      "description": "The giant panda is a bear native to China. It is known for its distinctive black and white coat and its diet primarily consisting of bamboo.",
+      "categoryId": "1"
+    },
+    {
+      "id": "5",
+      "imageUrl": "https://i0.wp.com/www.kickingdesigns.com/wp-content/uploads/2017/07/gorilla-7-17-2017_full-hd.jpg?fit=1920%2C1080&ssl=1",
+      "name": "Gorilla",
+      "species": [
+        "Gorilla beringei",
+        "Gorilla gorilla"
+      ],
+      "habitat": "African rainforests",
+      "conservation_status": [
+        "Endangered",
+        "Critically Endangered"
+      ],
+      "description": "Gorillas are the largest living primates. They are ground-dwelling and primarily herbivorous.",
+      "categoryId": "1"
+    },
+    {
+      "id": "6",
+      "imageUrl": "https://wallpapers.com/images/featured/kangaroo-9884nd4b35ojdy2t.jpg",
+      "name": "Red Kangaroo",
+      "species": "Macropus rufus",
+      "habitat": "Australian outback",
+      "conservation_status": "Least Concern",
+      "description": "The red kangaroo is the largest kangaroo species. It is known for its distinctive red fur and powerful hind legs, which allow it to hop long distances.",
+      "categoryId": "1"
+    },
+    {
+      "id": "7",
+      "imageUrl": "https://mrwallpaper.com/images/hd/1920x1080-hd-polar-bear-family-w3w346dv4x5okkiw.jpg",
+      "name": "Polar Bear",
+      "species": "Ursus maritimus",
+      "habitat": "Arctic Circle",
+      "conservation_status": "Vulnerable",
+      "description": "The polar bear is a large bear native to the Arctic. It is superbly adapted to its icy habitat with thick fur and a layer of fat for insulation.",
+      "categoryId": "1"
+    },
+    {
+      "id": "8",
+      "imageUrl": "https://images.axios.com/VAKQNebpnxnfTa57Kuy4KU485j8=/0x122:2000x1247/1920x1080/2023/08/27/1693145332558.jpg",
+      "name": "Komodo Dragon",
+      "species": "Varanus komodoensis",
+      "habitat": "Indonesian islands of Komodo, Rinca, Flores, and Gili Motang",
+      "conservation_status": "Vulnerable",
+      "description": "The Komodo dragon is the world's largest lizard. It is a fierce predator with a venomous bite and can be found in the Indonesian islands.",
+      "categoryId": "3"
+    },
+    {
+      "id": "9",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqzJIDmmGx7utAaG2_u719rn9O7A_jFdRt_j30QJoQNQ&s",
+      "name": "Blue Whale",
+      "species": "Balaenoptera musculus",
+      "habitat": "Oceans worldwide",
+      "conservation_status": "Endangered",
+      "description": "The blue whale is the largest animal on Earth. They are marine mammals and feed primarily on krill. They are known for their immense size and distinctive blue-gray color.",
+      "categoryId": "5"
+    },
+    {
+      "id": "10",
+      "imageUrl": "https://wallpapers.com/images/hd/majestic-lion-africa-4k-3t1n9bqee6i7fyg3.jpg",
+      "name": "African Lion",
+      "species": "Panthera leo",
+      "habitat": "African savannas and grasslands",
+      "conservation_status": "Vulnerable",
+      "description": "The African lion is a large carnivorous cat known for its mane. It is a keystone species in its ecosystem, playing a crucial role in maintaining the balance of the African savanna.",
+      "categoryId": "1"
+    },
+    {
+      "id": "11",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGaU-i10FeywGd_0fZtoBKU2EyNxD0uUogjQUDx-cP5Q&s",
+      "name": "Amazon Rainforest Frog",
+      "species": "Dendrobatidae",
+      "habitat": "Amazon Rainforest",
+      "conservation_status": "Vulnerable",
+      "description": "The Amazon Rainforest Frog, also known as poison dart frogs, are small colorful frogs native to the Amazon Rainforest. Some species possess toxins used by indigenous tribes for hunting.",
+      "categoryId": "2"
+    },
+    {
+      "id": "12",
+      "imageUrl": "https://i.pinimg.com/originals/00/89/c2/0089c2644015927d25c16aab18ffc1b4.jpg",
+      "name": "Siberian Tiger",
+      "species": "Panthera tigris altaica",
+      "habitat": "Russian Far East, Northeast China, and possibly North Korea",
+      "conservation_status": "Endangered",
+      "description": "The Siberian Tiger, also known as the Amur Tiger, is the largest cat species and primarily found in the forests of eastern Russia. Poaching and habitat loss are the main threats to its survival.",
+      "categoryId": "1"
+    },
+    {
+      "id": "13",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjElYbKYPTDLZN1xg3kfcBN8u-5beh29JmDAvCE7XQGw&s",
+      "name": "Galapagos Giant Tortoise",
+      "species": "Chelonoidis nigra",
+      "habitat": "Galapagos Islands",
+      "conservation_status": "Vulnerable",
+      "description": "The Galapagos Giant Tortoise is one of the largest tortoise species in the world. They are native to the Galapagos Islands and are known for their long lifespans, sometimes exceeding 100 years.",
+      "categoryId": "1"
+    },
+    {
+      "id": "14",
+      "imageUrl": "https://www.wallpaperflare.com/static/777/418/402/animals-eagle-birds-water-wallpaper.jpg",
+      "name": "Bald Eagle",
+      "species": "Haliaeetus leucocephalus",
+      "habitat": "North America",
+      "conservation_status": "Least Concern",
+      "description": "The Bald Eagle is a bird of prey found in North America, primarily near large bodies of open water. It is the national bird and symbol of the United States.",
+      "categoryId": "4"
+    },
+    {
+      "id": "15",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6mz-YgFdvxOdl2Ml6VZZeWknz0-kIFVy5-intz3Ar2Q&s",
+      "name": "Pangolin",
+      "species": "Manis",
+      "habitat": "Africa and Asia",
+      "conservation_status": "Critically Endangered",
+      "description": "Pangolins are unique mammals covered in protective keratin scales. They are often poached for their scales, which are used in traditional Chinese medicine.",
+      "categoryId": "1"
+    },
+    {
+      "id": "16",
+      "imageUrl": "https://getwallpapers.com/wallpaper/full/9/2/b/1055162-sloth-wallpaper-1920x1080-for-ipad.jpg",
+      "name": "Sloth",
+      "species": "Bradypodidae and Megalonychidae",
+      "habitat": "Central and South America",
+      "conservation_status": "Least Concern",
+      "description": "Sloths are slow-moving mammals found in the rainforests of Central and South America. They spend most of their time hanging upside down from trees.",
+      "categoryId": "1"
+    },
+    {
+      "id": "17",
+      "imageUrl": "https://s1.1zoom.me/b4057/126/Pandas_Glance_Sitting_521250_1920x1080.jpg",
+      "name": "Panda Ant",
+      "species": "Euspinolia militaris",
+      "habitat": "South America",
+      "conservation_status": "Data Deficient",
+      "description": "The Panda Ant is a species of wingless wasp found in South America. Its black and white coloration resembles that of a panda, hence its name.",
+      "categoryId": "6"
+    },
+    {
+      "id": "18",
+      "imageUrl": "https://images.travelandleisureasia.com/wp-content/uploads/sites/4/2023/09/26163052/platypus_0_feature.jpeg",
+      "name": "Australian Platypus",
+      "species": "Ornithorhynchus anatinus",
+      "habitat": "Eastern Australia",
+      "conservation_status": "Near Threatened",
+      "description": "The Australian Platypus is a unique mammal that lays eggs and is native to eastern Australia. It has a duck-like bill, webbed feet, and a beaver-like tail.",
+      "categoryId": "1"
+    },
+    {
+      "id": "19",
+      "imageUrl": "https://lh3.googleusercontent.com/proxy/K0i6l5QYXN-QNmO3mtv2sKXeYOOn7mEkU8ybFKKcOByjHegvKnryM2bIvZ3J9jcjql4UvKTOBx1B8b3fGhAcbT3BFJeOk9CrA34mxZhdLFBs0ucfBw",
+      "name": "Green Sea Turtle",
+      "species": "Chelonia mydas",
+      "habitat": "Tropical and subtropical oceans worldwide",
+      "conservation_status": "Endangered",
+      "description": "The Green Sea Turtle is one of the largest sea turtles and is found in tropical and subtropical oceans worldwide. They are herbivores, feeding on seagrasses and algae.",
+      "categoryId": "3"
+    },
+    {
+      "id": "20",
+      "imageUrl": "https://cdn.britannica.com/22/255922-050-40FC3063/Reticulated-python-Malayopython-reticulatus-snake-reptile.jpg",
+      "name": "Reticulated Python",
+      "species": "Python reticulatus",
+      "habitat": "Southeast Asia",
+      "conservation_status": "Least Concern",
+      "description": "The Reticulated Python is one of the largest snake species and is found in the jungles and forests of Southeast Asia. It is known for its beautifully patterned scales.",
+      "categoryId": "3"
+    },
+    {
+      "id": "21",
+      "imageUrl": "https://www.pbs.org/wnet/nature/files/2024/01/GoldenHeadedLionTamarin.jpg",
+      "name": "Golden Lion Tamarin",
+      "species": "Leontopithecus rosalia",
+      "habitat": "Atlantic coastal forests of Brazil",
+      "conservation_status": "Endangered",
+      "description": "The Golden Lion Tamarin is a small monkey with a striking golden mane. It is native to the Atlantic coastal forests of Brazil and is critically endangered due to habitat loss.",
+      "categoryId": "5"
+    },
+    {
+      "id": "22",
+      "imageUrl": "https://c4.wallpaperflare.com/wallpaper/569/587/669/birds-quetzal-bird-quetzal-wallpaper-preview.jpg",
+      "name": "Quetzal",
+      "species": "Pharomachrus mocinno",
+      "habitat": "Central America",
+      "conservation_status": "Near Threatened",
+      "description": "The Quetzal is a colorful bird native to the cloud forests of Central America. It is known for its vibrant plumage and long tail feathers.",
+      "categoryId": "4"
+    },
+    {
+      "id": "23",
+      "imageUrl": "https://images.interestingengineering.com/img/iea/ypwqWRpmGN/strange-biology-of-fish-lives-for-century-1.jpg",
+      "name": "Coelacanth",
+      "species": "Latimeria",
+      "habitat": "Deep underwater caves",
+      "conservation_status": "Least Concern",
+      "description": "The Coelacanth is a prehistoric fish that was thought to be extinct until it was rediscovered in the 20th century. It inhabits deep underwater caves.",
+      "categoryId": "7"
+    },
+    {
+      "id": "24",
+      "imageUrl": "https://c4.wallpaperflare.com/wallpaper/565/585/125/5bd39af810f17-wallpaper-preview.jpg",
+      "name": "Axolotl",
+      "species": "Ambystoma mexicanum",
+      "habitat": "Xochimilco lake complex in Mexico",
+      "conservation_status": "Critically Endangered",
+      "description": "The Axolotl is a unique salamander known for its regenerative abilities. It is native to the Xochimilco lake complex in Mexico and is critically endangered.",
+      "categoryId": "2"
+    },
+    {
+      "id": "25",
+      "imageUrl": "https://s1.1zoom.me/big7/78/Big_cats_Serval_Grass_560540_1920x1080.jpg",
+      "name": "Serval",
+      "species": "Leptailurus serval",
+      "habitat": "Grasslands of Africa",
+      "conservation_status": "Least Concern",
+      "description": "The Serval is a medium-sized wild cat native to the grasslands of Africa. It is known for its long legs, which help it hunt in tall grass.",
+      "categoryId": "5"
+    },
+    {
+      "id": "26",
+      "imageUrl": "https://www.rekoforest.org/wp-content/uploads/2021/09/rer-sunda-flying-lemur-1.jpg",
+      "name": "Sunda Flying Lemur",
+      "species": "Galeopterus variegatus",
+      "habitat": "Southeast Asia",
+      "conservation_status": "Least Concern",
+      "description": "The Sunda Flying Lemur, also known as the Sunda Colugo, is not a lemur and cannot fly. It is a gliding mammal native to the forests of Southeast Asia.",
+      "categoryId": "1"
+    },
+    {
+      "id": "27",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlJvTiUcqcEk1gpkMnWxdLyUdLDmzKqtw6Iu8ot0FEUQ&s",
+      "name": "Giant Otter",
+      "species": "Pteronura brasiliensis",
+      "habitat": "South America",
+      "conservation_status": "Endangered",
+      "description": "The Giant Otter is a large otter species native to South America. It is known for its long body, dense fur, and social behavior.",
+      "categoryId": "1"
+    },
+    {
+      "id": "28",
+      "imageUrl": "https://c4.wallpaperflare.com/wallpaper/893/310/470/animal-african-wild-dog-africa-wild-dog-wallpaper-preview.jpg",
+      "name": "African Wild Dog",
+      "species": "Lycaon pictus",
+      "habitat": "Sub-Saharan Africa",
+      "conservation_status": "Endangered",
+      "description": "The African Wild Dog, also known as the painted wolf, is a highly social carnivore native to sub-Saharan Africa. It is endangered due to habitat loss and human conflict.",
+      "categoryId": "5"
+    },
+    {
+      "id": "29",
+      "imageUrl": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa67a3ac-9666-402a-a623-f1961ce4f4db/d5mgb9p-200853d2-f168-4ac2-82d3-fd6cd6b47438.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2FhNjdhM2FjLTk2NjYtNDAyYS1hNjIzLWYxOTYxY2U0ZjRkYlwvZDVtZ2I5cC0yMDA4NTNkMi1mMTY4LTRhYzItODJkMy1mZDZjZDZiNDc0MzguanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.MTB7js_pTEK3WVtAucgjbmfWof_XzC1w1Q30ZVigylU",
+      "name": "Red Panda",
+      "species": "Ailurus fulgens",
+      "habitat": "Himalayas and southwestern China",
+      "conservation_status": "Endangered",
+      "description": "The Red Panda is a small arboreal mammal native to the eastern Himalayas and southwestern China. It is known for its distinctive red fur and bushy tail.",
+      "categoryId": "1"
+    },
+    {
+      "id": "30",
+      "imageUrl": "https://cdn.britannica.com/17/62917-050-3A8C2A1C/monarch-butterfly-Danaus-plexippus.jpg",
+      "name": "Monarch Butterfly",
+      "species": "Danaus plexippus",
+      "habitat": "North, Central, and South America",
+      "conservation_status": "Least Concern",
+      "description": "The Monarch Butterfly is known for its distinctive orange and black wings. It is famous for its long-distance seasonal migration in North America.",
+      "categoryId": "6"
+    },
+    {
+      "id": "31",
+      "imageUrl": "https://wallpaperaccess.com/full/1471301.jpg",
+      "name": "Cheetah",
+      "species": "Acinonyx jubatus",
+      "habitat": "Savannas of Africa and parts of Iran",
+      "conservation_status": "Vulnerable",
+      "description": "The cheetah is the fastest land animal, capable of reaching speeds up to 70 mph in short bursts. It is found in the savannas of Africa and parts of Iran.",
+      "categoryId": "5"
+    },
+    {
+      "id": "32",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrHvRbkWW-BTLMNe8lBQruX1lR_yze9zLVtQ&usqp=CAU",
+      "name": "Mountain Gorilla",
+      "species": "Gorilla beringei beringei",
+      "habitat": "Mountain forests of Africa",
+      "conservation_status": "Endangered",
+      "description": "The mountain gorilla is a subspecies of the eastern gorilla found in the mountain forests of Africa. It is one of the most endangered apes in the world.",
+      "categoryId": "1"
+    }
+  ]
+}

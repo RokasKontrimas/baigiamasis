@@ -1,6 +1,6 @@
 import {Route, Routes} from "react-router-dom";
-import WelcomePage from "./Pages/WelcomePage.jsx";
-import NotFoundPage from "./Pages/NotFoundPage.jsx";
+import WelcomePage from "./Pages/WelcomePage/WelcomePage.jsx";
+import NotFoundPage from "./Pages/NotFoundPage/NotFoundPage.jsx";
 import HeaderComponent from "./Components/HeaderComponent/HeaderComponent.jsx";
 
 function App() {
