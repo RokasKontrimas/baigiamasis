@@ -53,34 +53,6 @@
   text-align: center;
 }
 
-.relatedAnimals {
-  display: flex;
-  justify-content: flex-start;
-  column-gap: 10px;
-  padding: 0 10px;
-  @include responsive.sm {
-
-    overflow: auto; /* Allow scrolling */
-    scrollbar-width: none; /* Hide scrollbar in Firefox */
-    -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
-    &::-webkit-scrollbar {
-      display: none; /* Hide scrollbar in WebKit browsers */
-    }
-  }
-}
-
-.relatedAnimalItem {
-  width: 100%;
-
-  & img {
-    width: 100%;
-    @include responsive.sm {
-      width: 300px;
-    }
-    aspect-ratio: 16/9;
-    object-fit: cover;
-  }
-}
 
 
 
