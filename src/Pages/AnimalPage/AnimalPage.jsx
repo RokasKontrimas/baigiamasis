@@ -4,6 +4,7 @@ import {Link, useParams} from "react-router-dom";
 import axios from "../../axios.jsx";
 import ContainerComponent from "../../Components/ContainerComponent/ContainerComponent.jsx";
 import LoadingComponent from "../../Components/LoadingComponent/LoadingComponent.jsx";
+import RelatedItemsComponent from "../../Components/RelatedItemsComponent/RelatedItemsComponent.jsx";
 
 const AnimalPage = () => {
     const [animal, setAnimal] = useState('')
@@ -78,16 +79,11 @@ const AnimalPage = () => {
                         </div>
                     </div>
                     {relatedAnimals.length > 0 && (
-                        <div className={styles.relatedAnimalsWrapper}>
-                                <h2 className={styles.pageTitle}>Related animals</h2>
-                            <div className={styles.relatedAnimals}>
-                                {relatedAnimals.map((animal) => {
-                                    return <Link className={styles.relatedAnimalItem} key={animal.id} to={`/animal/${animal.id}`}>
-                                        <img src={animal.imageUrl} width='300'/>
-                                    </Link>
-                                })}
-                            </div>
-                        </div>
+                <RelatedItemsComponent
+                    data={relatedAnimals}
+                    url='animal'
+                    title='Related animals'
+                />
                     )}
                 </>
 
