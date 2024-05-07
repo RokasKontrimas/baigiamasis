@@ -360,5 +360,678 @@
       "description": "The mountain gorilla is a subspecies of the eastern gorilla found in the mountain forests of Africa. It is one of the most endangered apes in the world.",
       "categoryId": "1"
     }
+  ],
+  "treeCategories": [
+    {
+      "id": "1",
+      "name": "Deciduous Trees",
+      "description": "Deciduous trees shed their leaves annually, usually in the fall."
+    },
+    {
+      "id": "2",
+      "name": "Coniferous Trees",
+      "description": "Coniferous trees bear cones and have needle-like or scale-like leaves that are typically evergreen."
+    },
+    {
+      "id": "3",
+      "name": "Tropical Trees",
+      "description": "Tropical trees thrive in warm climates and are often found in rainforests or tropical regions."
+    },
+    {
+      "id": "4",
+      "name": "Temperate Trees",
+      "description": "Temperate trees grow in regions with moderate climates and distinct seasons."
+    },
+    {
+      "id": "5",
+      "name": "Fruit Trees",
+      "description": "Fruit trees produce edible fruits and are cultivated for their fruits rather than timber."
+    },
+    {
+      "id": "6",
+      "name": "Palm Trees",
+      "description": "Palm trees are characterized by their unbranched stems and large, fan-shaped leaves. They are common in tropical and subtropical regions."
+    },
+    {
+      "id": "7",
+      "name": "Ornamental Trees",
+      "description": "Ornamental trees are cultivated for their aesthetic value, such as colorful foliage, flowers, or unique shapes."
+    },
+    {
+      "id": "8",
+      "name": "Native Trees",
+      "description": "Native trees are indigenous to a particular region or habitat and play a crucial role in local ecosystems."
+    },
+    {
+      "id": "9",
+      "name": "Exotic Trees",
+      "description": "Exotic trees are non-native species introduced to new regions. They may have ecological impacts on local ecosystems."
+    },
+    {
+      "id": "10",
+      "name": "Urban Trees",
+      "description": "Urban trees grow in urban environments and provide various benefits, including shade, air purification, and habitat for urban wildlife."
+    },
+    {
+      "id": "11",
+      "name": "Forest Trees",
+      "description": "Forest trees are found in forested areas and play a significant role in maintaining ecosystem health and biodiversity."
+    },
+    {
+      "id": "12",
+      "name": "Mountain Trees",
+      "description": "Mountain trees grow at high altitudes and are adapted to harsh mountainous conditions, such as cold temperatures and strong winds."
+    },
+    {
+      "id": "13",
+      "name": "Wetland Trees",
+      "description": "Wetland trees grow in marshes, swamps, and other wetland habitats. They are adapted to periodically flooded conditions."
+    },
+    {
+      "id": "14",
+      "name": "Drought-Resistant Trees",
+      "description": "Drought-resistant trees are adapted to arid climates and can survive with minimal water."
+    },
+    {
+      "id": "15",
+      "name": "Shade Trees",
+      "description": "Shade trees have dense canopies that provide relief from the sun's heat and are commonly planted for landscaping and urban cooling."
+    },
+    {
+      "id": "16",
+      "name": "Alley Trees",
+      "description": "Alley trees are planted along streets or avenues and contribute to urban greening and aesthetics."
+    },
+    {
+      "id": "17",
+      "name": "Boundary Trees",
+      "description": "Boundary trees mark property lines or boundaries and may have cultural or historical significance."
+    },
+    {
+      "id": "18",
+      "name": "Heritage Trees",
+      "description": "Heritage trees are old, significant trees with historical, cultural, or ecological importance."
+    },
+    {
+      "id": "19",
+      "name": "Fire-Resistant Trees",
+      "description": "Fire-resistant trees are adapted to withstand wildfires and play a role in fire ecology."
+    },
+    {
+      "id": "20",
+      "name": "Windbreak Trees",
+      "description": "Windbreak trees are planted to reduce wind erosion, protect crops, and create microclimates."
+    }
+  ],
+  "trees": [
+    {
+      "id": "1",
+      "treeCategoryId": "1",
+      "name": "Oak",
+      "imageUrl": "https://www.longislandnatives.com/wp-content/uploads/2020/11/image-21-1024x768.jpeg",
+      "description": "A common deciduous tree known for its strong wood and distinctive lobed leaves.",
+      "scientificName": "Quercus"
+    },
+    {
+      "id": "2",
+      "treeCategoryId": "1",
+      "name": "Maple",
+      "imageUrl": "https://onlineorchards.com/cdn/shop/products/image_ea955fa6-ad7f-422c-8927-11a6d7e50cf3_1200x1200.jpg?v=1547477242",
+      "description": "Maples are deciduous trees known for their vibrant autumn foliage and sap used in maple syrup production.",
+      "scientificName": "Acer"
+    },
+    {
+      "id": "3",
+      "treeCategoryId": "1",
+      "name": "Birch",
+      "imageUrl": "https://a-z-animals.com/media/2023/11/GettyImages-1330877184-1024x768.jpg",
+      "description": "Birch trees have distinctive white bark and delicate leaves, often found in temperate forests.",
+      "scientificName": "Betula"
+    },
+    {
+      "id": "4",
+      "treeCategoryId": "2",
+      "name": "Pine",
+      "imageUrl": "https://milnepublishing.geneseo.edu/app/uploads/sites/235/2020/06/image2-21-1024x768.jpeg",
+      "description": "Pines are coniferous trees with needle-like leaves and produce pine cones.",
+      "scientificName": "Pinus"
+    },
+    {
+      "id": "5",
+      "treeCategoryId": "2",
+      "name": "Spruce",
+      "imageUrl": "https://directree.org/wp-content/uploads/2019/11/patree-1024x768.jpg",
+      "description": "Spruces are coniferous trees known for their pyramidal shape and sharp needles.",
+      "scientificName": "Picea"
+    },
+    {
+      "id": "6",
+      "treeCategoryId": "2",
+      "name": "Fir",
+      "imageUrl": "https://stories.rbge.org.uk/wp-content/uploads/2017/06/Abies-1024x768.jpg",
+      "description": "Firs are coniferous trees with soft needles and upright cones.",
+      "scientificName": "Abies"
+    },
+    {
+      "id": "7",
+      "treeCategoryId": "3",
+      "name": "Palm",
+      "imageUrl": "https://wallpaperswide.com/download/palm_tree_beach-wallpaper-1024x768.jpg",
+      "description": "Palms are tropical trees with fan-shaped leaves and often found in beach or rainforest environments.",
+      "scientificName": "Arecaceae"
+    },
+    {
+      "id": "8",
+      "treeCategoryId": "3",
+      "name": "Mango",
+      "imageUrl": "https://www.lautokacitycouncil.com.fj/wp-content/uploads/2023/10/Mango-tree.jpg",
+      "description": "Mango trees are tropical fruit trees known for their sweet and juicy fruits.",
+      "scientificName": "Mangifera indica"
+    },
+    {
+      "id": "9",
+      "treeCategoryId": "3",
+      "name": "Banana",
+      "imageUrl": "https://harvesttotable.com/wp-content/uploads/2019/12/bigstock-Organic-Banana-Plantation-On-C-328377010-1024x768.jpg",
+      "description": "Banana trees produce clusters of edible bananas and thrive in warm, humid climates.",
+      "scientificName": "Musa"
+    },
+    {
+      "id": "10",
+      "treeCategoryId": "4",
+      "name": "European Beech",
+      "imageUrl": "https://bayardcuttingarboretum.com/wp-content/uploads/2017/09/Fagus-Sylvatica-Asplenifolia.jpg",
+      "description": "A temperate deciduous tree with smooth gray bark and oval leaves.",
+      "scientificName": "Fagus sylvatica"
+    },
+    {
+      "id": "11",
+      "treeCategoryId": "4",
+      "name": "Japanese Maple",
+      "imageUrl": "https://www.pixiesgardens.com/cdn/shop/products/amber-ghost-japanese-maple-1.jpg?v=1621602117",
+      "description": "An ornamental tree with delicate foliage, popular in temperate gardens.",
+      "scientificName": "Acer palmatum"
+    },
+    {
+      "id": "12",
+      "treeCategoryId": "4",
+      "name": "Douglas Fir",
+      "imageUrl": "https://seedsworld.online/cdn/shop/products/25-douglas-fir-pseudotsuga-menziesii-glauca-tree-seeds-3_1024x1024.jpg?v=1678800888",
+      "description": "A large coniferous tree native to North America, valued for its timber.",
+      "scientificName": "Pseudotsuga menziesii"
+    },
+    {
+      "id": "13",
+      "treeCategoryId": "5",
+      "name": "Apple",
+      "imageUrl": "https://www.flora-cs.com/images_forum/gallery/15523/42490-malus-domestica-4.jpg",
+      "description": "Apple trees produce crisp, sweet fruits and are widely cultivated in orchards.",
+      "scientificName": "Malus domestica"
+    },
+    {
+      "id": "14",
+      "treeCategoryId": "5",
+      "name": "Orange",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Citrus_sinensis_JPG01.jpg/1024px-Citrus_sinensis_JPG01.jpg",
+      "description": "Orange trees produce round, citrus fruits prized for their juice.",
+      "scientificName": "Citrus sinensis"
+    },
+    {
+      "id": "15",
+      "treeCategoryId": "5",
+      "name": "Cherry",
+      "imageUrl": "https://i1.wp.com/mgnv.org/wp-content/uploads/2020/04/Prunus_avium_-_UK_12.jpg?ssl=1",
+      "description": "Cherry trees produce small, sweet fruit and are popular for home gardens.",
+      "scientificName": "Prunus avium"
+    },
+    {
+      "id": "16",
+      "treeCategoryId": "6",
+      "name": "Coconut Palm",
+      "imageUrl": "https://live.staticflickr.com/1520/23632928554_9e32b79cb7_b.jpg",
+      "description": "Coconut palms produce coconuts and are commonly found in tropical coastal areas.",
+      "scientificName": "Cocos nucifera"
+    },
+    {
+      "id": "17",
+      "treeCategoryId": "6",
+      "name": "Date Palm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/66/Brazilian_Date_Palm.jpg",
+      "description": "Date palms produce sweet, edible dates and are cultivated in arid regions.",
+      "scientificName": "Phoenix dactylifera"
+    },
+    {
+      "id": "18",
+      "treeCategoryId": "6",
+      "name": "Sago Palm",
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/257697638/large.jpeg",
+      "description": "Sago palms have feathery leaves and produce starchy seeds used in cooking.",
+      "scientificName": "Cycas revoluta"
+    },
+    {
+      "id": "19",
+      "treeCategoryId": "7",
+      "name": "Japanese Cherry Blossom",
+      "imageUrl": "https://keralabee.com/wp-content/uploads/2024/03/IMG_20240303_151346-1024x768.jpg",
+      "description": "Known for its beautiful pink blossoms, often seen in gardens and parks.",
+      "scientificName": "Prunus serrulata"
+    },
+    {
+      "id": "20",
+      "treeCategoryId": "7",
+      "name": "Redbud",
+      "imageUrl": "https://nesselrodonthenew.com/wp-content/uploads/2023/02/E70A9EF7-6F2B-4B1D-88CF-F15BC487A6E9-1024x768-1024x585.webp",
+      "description": "Redbuds are small ornamental trees with pink or purple flowers in spring.",
+      "scientificName": "Cercis"
+    },
+    {
+      "id": "21",
+      "treeCategoryId": "7",
+      "name": "Dogwood",
+      "imageUrl": "https://www.princetonnj.gov/ImageRepository/Document?documentID=10406",
+      "description": "Dogwoods have showy flowers and colorful foliage, popular in landscaping.",
+      "scientificName": "Cornus"
+    },
+    {
+      "id": "22",
+      "treeCategoryId": "8",
+      "name": "California Redwood",
+      "imageUrl": "https://www.stayintheredwoods.com/wp-content/uploads/2022/07/DJI_012312156-1-1024x768.jpg",
+      "description": "Native to California, redwoods are the tallest trees in the world.",
+      "scientificName": "Sequoia sempervirens"
+    },
+    {
+      "id": "23",
+      "treeCategoryId": "8",
+      "name": "White Pine",
+      "imageUrl": "https://d3tw83gkphf5vc.cloudfront.net/72157677655749307/47580730321_b.jpg?w=826",
+      "description": "A common native pine tree in eastern North America, valued for its straight trunk and soft wood.",
+      "scientificName": "Pinus strobus"
+    },
+    {
+      "id": "24",
+      "treeCategoryId": "8",
+      "name": "Bald Cypress",
+      "imageUrl": "https://www.gardenia.net/wp-content/uploads/2023/05/Taxodium-distichum-Bald-Cypress.webp",
+      "description": "Native to swamps of the southeastern United States, known for its 'knees' and buttressed trunk.",
+      "scientificName": "Taxodium distichum"
+    },
+    {
+      "id": "25",
+      "treeCategoryId": "9",
+      "name": "Eucalyptus",
+      "imageUrl": "https://www.strathbogieranges.org.au/wp-content/uploads/Anceint-Eucalypt-Tree-Strathbogie-1024x768.jpg",
+      "description": "Native to Australia, eucalyptus trees are now grown in many regions for their fast growth and aromatic leaves.",
+      "scientificName": "Eucalyptus"
+    },
+    {
+      "id": "26",
+      "treeCategoryId": "9",
+      "name": "Norfolk Island Pine",
+      "imageUrl": "https://live.staticflickr.com/2220/2197073558_4e569678c9_b.jpg",
+      "description": "Native to Norfolk Island, these conifers are often grown as ornamentals in other regions.",
+      "scientificName": "Araucaria heterophylla"
+    },
+    {
+      "id": "28",
+      "treeCategoryId": "1",
+      "name": "Ash",
+      "imageUrl": "https://d3tw83gkphf5vc.cloudfront.net/72157674468388534/48467437161_b.jpg?w=826",
+      "description": "Ash trees are deciduous with compound leaves and distinctive black buds.",
+      "scientificName": "Fraxinus"
+    },
+    {
+      "id": "29",
+      "treeCategoryId": "1",
+      "name": "Willow",
+      "imageUrl": "https://d3tw83gkphf5vc.cloudfront.net/72157675160221443/32051547721_b.jpg?w=826",
+      "description": "Willows have long, narrow leaves and pendulous branches, often found near water.",
+      "scientificName": "Salix"
+    },
+    {
+      "id": "30",
+      "treeCategoryId": "1",
+      "name": "Elm",
+      "imageUrl": "https://d3tw83gkphf5vc.cloudfront.net/72157679286032695/50338567126_b.jpg?w=826",
+      "description": "Elms are deciduous trees with serrated leaves and a broad, vase-shaped crown.",
+      "scientificName": "Ulmus"
+    },
+    {
+      "id": "31",
+      "treeCategoryId": "2",
+      "name": "Cedar",
+      "imageUrl": "https://d3tw83gkphf5vc.cloudfront.net/72157677028219401/34669800752_b.jpg?w=826",
+      "description": "Cedars are coniferous trees with fragrant wood and scale-like leaves.",
+      "scientificName": "Cedrus"
+    },
+    {
+      "id": "32",
+      "treeCategoryId": "2",
+      "name": "Hemlock",
+      "imageUrl": "https://d3tw83gkphf5vc.cloudfront.net/72157700926954332/44306703030_b.jpg?w=826",
+      "description": "Hemlocks are coniferous trees with flat needles and drooping branches.",
+      "scientificName": "Tsuga"
+    },
+    {
+      "id": "33",
+      "treeCategoryId": "2",
+      "name": "Juniper",
+      "imageUrl": "https://d3tw83gkphf5vc.cloudfront.net/72157690269147743/33453493118_b.jpg?w=826",
+      "description": "Junipers are conifers with needle-like leaves and berry-like cones.",
+      "scientificName": "Juniperus"
+    },
+    {
+      "id": "34",
+      "treeCategoryId": "3",
+      "name": "Avocado",
+      "imageUrl": "https://d3tw83gkphf5vc.cloudfront.net/72157663742612727/25358582437_b.jpg?w=826",
+      "description": "Avocado trees produce creamy, nutrient-rich fruits and are native to Central America.",
+      "scientificName": "Persea americana"
+    },
+    {
+      "id": "35",
+      "treeCategoryId": "3",
+      "name": "Papaya",
+      "imageUrl": "https://pixahive.com/wp-content/uploads/2020/11/Beautiful-papaya-garden-204795-pixahive-1024x768.jpg",
+      "description": "Papaya trees produce large, tropical fruits with orange flesh and black seeds.",
+      "scientificName": "Carica papaya"
+    },
+    {
+      "id": "36",
+      "treeCategoryId": "3",
+      "name": "Guava",
+      "imageUrl": "https://live.staticflickr.com/7193/6804902778_d5e9c59ca0_b.jpg",
+      "description": "Guava trees bear small, round fruits with a fragrant aroma and sweet flavor.",
+      "scientificName": "Psidium guajava"
+    },
+    {
+      "id": "37",
+      "treeCategoryId": "4",
+      "name": "Hawthorn",
+      "imageUrl": "https://d3tw83gkphf5vc.cloudfront.net/72157717655238237/50785217006_b.jpg?w=826",
+      "description": "Hawthorns are small deciduous trees with thorny branches and clusters of white or pink flowers.",
+      "scientificName": "Crataegus"
+    },
+    {
+      "id": "38",
+      "treeCategoryId": "4",
+      "name": "Aspen",
+      "imageUrl": "https://d3tw83gkphf5vc.cloudfront.net/72157677878833315/36377751492_b.jpg?w=826",
+      "description": "Aspens are fast-growing deciduous trees with shimmering leaves that flutter in the breeze.",
+      "scientificName": "Populus tremula"
+    },
+    {
+      "id": "39",
+      "treeCategoryId": "4",
+      "name": "Sycamore",
+      "imageUrl": "https://d3tw83gkphf5vc.cloudfront.net/72157678503956225/33858667100_b.jpg?w=826",
+      "description": "Sycamores have distinctive mottled bark and large, lobed leaves.",
+      "scientificName": "Platanus"
+    },
+    {
+      "id": "40",
+      "treeCategoryId": "5",
+      "name": "Lemon",
+      "imageUrl": "https://d3tw83gkphf5vc.cloudfront.net/72157662703317258/38411668256_b.jpg?w=826",
+      "description": "Lemon trees produce tart, yellow fruits used in cooking and beverages.",
+      "scientificName": "Citrus limon"
+    },
+    {
+      "id": "41",
+      "treeCategoryId": "5",
+      "name": "Peach",
+      "imageUrl": "https://d3tw83gkphf5vc.cloudfront.net/72157687038084594/37258015452_b.jpg?w=826",
+      "description": "Peach trees bear fuzzy-skinned fruits with sweet, juicy flesh.",
+      "scientificName": "Prunus persica"
+    },
+    {
+      "id": "42",
+      "treeCategoryId": "5",
+      "name": "Pear",
+      "imageUrl": "https://d3tw83gkphf5vc.cloudfront.net/72157713501108787/49666472987_b.jpg?w=826",
+      "description": "Pear trees produce sweet, crisp fruits that come in various shapes and colors.",
+      "scientificName": "Pyrus"
+    },
+    {
+      "id": "43",
+      "treeCategoryId": "6",
+      "name": "Areca Palm",
+      "imageUrl": "https://static.inaturalist.org/photos/80725984/large.jpeg",
+      "description": "Areca palms have feathery fronds and produce small, orange fruit.",
+      "scientificName": "Areca"
+    },
+    {
+      "id": "44",
+      "treeCategoryId": "6",
+      "name": "Majesty Palm",
+      "imageUrl": "https://palmtreeplanet.com/wp-content/uploads/2023/12/Untitled-design-2023-12-09T125457.446-1024x768.png",
+      "description": "Majesty palms are popular indoor plants with graceful, arching fronds.",
+      "scientificName": "Ravenea rivularis"
+    },
+    {
+      "id": "45",
+      "treeCategoryId": "6",
+      "name": "Fan Palm",
+      "imageUrl": "https://a-z-animals.com/media/2023/03/shutterstock_1890078520-1024x768.jpg",
+      "description": "Fan palms have large, fan-shaped leaves and are commonly used in landscaping.",
+      "scientificName": "Livistona"
+    },
+    {
+      "id": "46",
+      "treeCategoryId": "7",
+      "name": "Magnolia",
+      "imageUrl": "https://stumpbustersllc.com/wp-content/uploads/2020/04/tulip-magnolia-StumpBustersLLC-1-1024x768.jpg",
+      "description": "Magnolias are ornamental trees with large, fragrant flowers in shades of white, pink, or purple.",
+      "scientificName": "Magnolia"
+    },
+    {
+      "id": "48",
+      "treeCategoryId": "7",
+      "name": "Crabapple",
+      "imageUrl": "https://artandhome.net/wp-content/uploads/2020/05/Malus-Prairifire-Crabapple-Tree-1024x768.jpg",
+      "description": "Crabapples are small, flowering trees with tart fruit often used in jams and jellies.",
+      "scientificName": "Malus"
+    },
+    {
+      "id": "49",
+      "treeCategoryId": "8",
+      "name": "Live Oak",
+      "imageUrl": "https://s3.amazonaws.com/eit-planttoolbox-prod/media/images/Quercus_virginiana--_OfQKJ461OYhz.jpe",
+      "description": "Live oaks are evergreen trees with broad, spreading crowns and leathery leaves.",
+      "scientificName": "Quercus virginiana"
+    },
+    {
+      "id": "50",
+      "treeCategoryId": "8",
+      "name": "Black Cherry",
+      "imageUrl": "https://api.naturemapr.org/api/sightings/4353763/images/1?r=1331200733",
+      "description": "Black cherries are native deciduous trees with edible fruits and valuable timber.",
+      "scientificName": "Prunus serotina"
+    },
+    {
+      "id": "51",
+      "treeCategoryId": "8",
+      "name": "Catalpa",
+      "imageUrl": "https://live.staticflickr.com/4450/37555642841_fd02851c89_b.jpg",
+      "description": "Catalpas are deciduous trees with showy flowers and long, bean-like seed pods.",
+      "scientificName": "Catalpa"
+    },
+    {
+      "id": "52",
+      "treeCategoryId": "9",
+      "name": "Monkey Puzzle",
+      "imageUrl": "https://live.staticflickr.com/154/364289783_b0142a2c24_b.jpg",
+      "description": "Monkey puzzle trees are evergreen conifers with spiky, overlapping leaves and large, egg-shaped cones.",
+      "scientificName": "Araucaria araucana"
+    },
+    {
+      "id": "53",
+      "treeCategoryId": "9",
+      "name": "Norfolk Island Hibiscus",
+      "imageUrl": "https://live.staticflickr.com/65535/53406207802_67f694a90f_b.jpg",
+      "description": "Norfolk Island hibiscus trees have glossy leaves and large, showy flowers in shades of pink, red, or yellow.",
+      "scientificName": "Lagunaria patersonia"
+    },
+    {
+      "id": "55",
+      "treeCategoryId": "10",
+      "name": "London Plane",
+      "imageUrl": "https://live.staticflickr.com/65535/48697218162_4c4a7d6f53_b.jpg",
+      "description": "London planes are large deciduous trees often planted in urban areas for their tolerance to pollution and ability to provide shade.",
+      "scientificName": "Platanus × acerifolia"
+    },
+    {
+      "id": "56",
+      "treeCategoryId": "10",
+      "name": "Ginkgo",
+      "imageUrl": "https://clv.h-cdn.co/assets/15/48/1024x768/sd-aspect-1448471696-12273586-10208023548449668-4692005741059267731-o.jpg",
+      "description": "Ginkgo trees are known for their unique fan-shaped leaves and resilience to urban conditions.",
+      "scientificName": "Ginkgo biloba"
+    },
+    {
+      "id": "57",
+      "treeCategoryId": "11",
+      "name": "Red Alder",
+      "imageUrl": "https://eforests.co.uk/wp-content/uploads/2021/08/Common-Alder-%E2%80%94-Alnus-glutinosa-%E2%80%94-mature-tree-1024x768.jpg",
+      "description": "Red alders are fast-growing deciduous trees found in forested areas of North America, providing important habitat and nitrogen fixation.",
+      "scientificName": "Alnus rubra"
+    },
+    {
+      "id": "58",
+      "treeCategoryId": "11",
+      "name": "Sitka Spruce",
+      "imageUrl": "https://growandgatherscotland.files.wordpress.com/2020/11/img_20191117_132246.jpg?w=1024",
+      "description": "Sitka spruces are large conifers native to the Pacific Northwest and are valuable timber trees in forest ecosystems.",
+      "scientificName": "Picea sitchensis"
+    },
+    {
+      "id": "59",
+      "treeCategoryId": "12",
+      "name": "Engelmann Spruce",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/2013-07-14_11_11_56_Engelmann_Spruce_near_tree-line_on_Wheeler_Peak_in_Great_Basin_National_Park%2C_Nevada.jpg/1024px-2013-07-14_11_11_56_Engelmann_Spruce_near_tree-line_on_Wheeler_Peak_in_Great_Basin_National_Park%2C_Nevada.jpg",
+      "description": "Engelmann spruces are conifers adapted to high-altitude mountain environments, providing habitat and stabilization in rocky terrain.",
+      "scientificName": "Picea engelmannii"
+    },
+    {
+      "id": "60",
+      "treeCategoryId": "12",
+      "name": "Alpine Fir",
+      "imageUrl": "https://cloudfront-us-east-1.images.arcpublishing.com/gray/X6XWQO3SZZGI7FVG4Q4U7QTYCA.jpg",
+      "description": "Alpine firs are evergreen trees that thrive in mountainous regions, tolerating cold temperatures and high winds.",
+      "scientificName": "Abies lasiocarpa"
+    },
+    {
+      "id": "61",
+      "treeCategoryId": "13",
+      "name": "Black Gum",
+      "imageUrl": "https://buchanansplants.com/wp-content/uploads/2021/09/Black-Gum.jpg",
+      "description": "Black gums, or tupelos, are deciduous trees commonly found in wetland habitats of North America, providing food and habitat for wildlife.",
+      "scientificName": "Nyssa sylvatica"
+    },
+    {
+      "id": "62",
+      "treeCategoryId": "13",
+      "name": "Willow Oak",
+      "imageUrl": "https://live.staticflickr.com/84/227669482_7f31493855_b.jpg",
+      "description": "Willow oaks are deciduous trees with willow-like leaves and are often found in wetland areas, providing shade and erosion control.",
+      "scientificName": "Quercus phellos"
+    },
+    {
+      "id": "63",
+      "treeCategoryId": "14",
+      "name": "Crape Myrtle",
+      "imageUrl": "https://dallasnews.imgix.net/1557507784-Crape_myrtles_showing_off_their_potential.jpeg",
+      "description": "Crape myrtles are drought-resistant deciduous trees known for their colorful flowers and attractive bark.",
+      "scientificName": "Lagerstroemia"
+    },
+    {
+      "id": "64",
+      "treeCategoryId": "14",
+      "name": "Texas Ebony",
+      "imageUrl": "https://m.media-amazon.com/images/I/71bjrtjBQCL._AC_UF894,1000_QL80_.jpg",
+      "description": "Texas ebonies are evergreen trees native to arid regions of Texas and northern Mexico, capable of withstanding extreme drought.",
+      "scientificName": "Ebenopsis ebano"
+    },
+    {
+      "id": "65",
+      "treeCategoryId": "15",
+      "name": "Sweetgum",
+      "imageUrl": "https://whitehouseoh.gov/wp-content/uploads/2020/04/Worplesdon-Sweetgum-1024x768.png",
+      "description": "Sweetgums are deciduous trees with star-shaped leaves that provide dense shade and are often planted for landscaping.",
+      "scientificName": "Liquidambar"
+    },
+    {
+      "id": "66",
+      "treeCategoryId": "15",
+      "name": "Tulip Tree",
+      "imageUrl": "https://sbbeautiful.org/wp-content/uploads/2017/06/African-Tulip-Tree-IMG_0999-Gress-copy-001-2016_09_07-17_32_41-UTC.jpg",
+      "description": "Tulip trees, or tulip poplars, are large deciduous trees with tulip-like flowers and are prized for their shade and ornamental value.",
+      "scientificName": "Liriodendron tulipifera"
+    },
+    {
+      "id": "67",
+      "treeCategoryId": "16",
+      "name": "American Elm",
+      "imageUrl": "https://cdn10.bigcommerce.com/s-wzl5vx/product_images/uploaded_images/american-elm-1a.jpg?t=1408137399",
+      "description": "American elms are tall deciduous trees commonly planted along streets and avenues for their graceful arching branches and vase-like shape.",
+      "scientificName": "Ulmus americana"
+    },
+    {
+      "id": "69",
+      "treeCategoryId": "17",
+      "name": "Cedar of Lebanon",
+      "imageUrl": "https://live.staticflickr.com/4074/4768773530_2339231a4b_b.jpg",
+      "description": "Cedars of Lebanon are evergreen trees historically planted as boundary markers and valued for their majestic appearance.",
+      "scientificName": "Cedrus libani"
+    },
+    {
+      "id": "71",
+      "treeCategoryId": "18",
+      "name": "Angel Oak",
+      "imageUrl": "https://live.staticflickr.com/8327/8351041196_a29e9b1398_b.jpg",
+      "description": "Angel oaks are massive live oaks with sprawling branches and are considered cultural and historical landmarks.",
+      "scientificName": "Quercus virginiana"
+    },
+    {
+      "id": "72",
+      "treeCategoryId": "18",
+      "name": "Yew Tree",
+      "imageUrl": "https://live.staticflickr.com/91/242787945_76f2f09c94_b.jpg",
+      "description": "Yew trees have dark green foliage and red berries, often associated with ancient religious sites and folklore.",
+      "scientificName": "Taxus"
+    },
+    {
+      "id": "73",
+      "treeCategoryId": "19",
+      "name": "California Redbud",
+      "imageUrl": "https://www.trees.com/wp-content/uploads/2020/01/a-redbud-tree-1024x768.jpg",
+      "description": "California redbuds are drought-resistant trees native to California and are valued for their springtime display of pink flowers.",
+      "scientificName": "Cercis occidentalis"
+    },
+    {
+      "id": "74",
+      "treeCategoryId": "19",
+      "name": "Madrone",
+      "imageUrl": "https://live.staticflickr.com/159/372959476_48be1a4466_b.jpg",
+      "description": "Madrones are drought-resistant evergreen trees with striking red bark and white flowers.",
+      "scientificName": "Arbutus"
+    },
+    {
+      "id": "75",
+      "treeCategoryId": "20",
+      "name": "Eastern Red Cedar",
+      "imageUrl": "https://txtreefarm.com/wp-content/uploads/2024/01/Eastern-Red-Cedar-4.jpg",
+      "description": "Eastern red cedars are windbreak trees commonly planted to protect crops and property from strong winds and erosion.",
+      "scientificName": "Juniperus virginiana"
+    },
+    {
+      "id": "76",
+      "treeCategoryId": "20",
+      "name": "Black Locust",
+      "imageUrl": "https://d3tw83gkphf5vc.cloudfront.net/72157677756396256/31535489141_b.jpg?w=826",
+      "description": "Black locusts are fast-growing trees planted as windbreaks and for their nitrogen-fixing ability in poor soils.",
+      "scientificName": "Robinia pseudoacacia"
+    }
   ]
 }
+
