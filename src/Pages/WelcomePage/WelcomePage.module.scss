@@ -1,3 +1,5 @@
+@use '../../../src/styles/partials/variables';
+@use '../../../src/styles/partials/responsive';
 .wrapper {
   position: relative;
   background-color: black;
@@ -16,9 +18,20 @@
 }
 .pageTitle::first-letter {
   color: white;
-  font-size: 48px;
 }
-
+.pageTitle {
+  width: 100%;
+  @include responsive.sm {
+    font-size: 32px;
+  }
+  font-size: 48px;
+  animation: load 1.2s linear;
+}
+@keyframes load{
+  0%{opacity: 0;}
+  50%{opacity: .5;}
+  100%{opacity: 1;}
+}
 .btn {
   text-decoration: none;
   color: white;
@@ -27,6 +40,7 @@
   top: calc(50% + 50px);
   transform: translateX(-50%);
   transition: ease-in 0.2s;
+  animation: load 1.2s linear;
 
   &:hover {
     padding: 5px;

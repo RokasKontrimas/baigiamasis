@@ -15,21 +15,23 @@
 
 @keyframes l8 {
   0% {
-    background-size: 25px 100%, 25px 100%, 25px 100%
+    background-size: 25px 100%, 25px 100%, 25px 100%;
   }
   20% {
-    background-size: 25px 50%, 25px 100%, 25px 100%
+    background-size: 25px 50%, 25px 100%, 25px 100%;
   }
   40% {
-    background-size: 25px 50%, 25px 50%, 25px 100%
+    background-size: 25px 50%, 25px 50%, 25px 100%;
   }
   60% {
-    background-size: 25px 100%, 25px 50%, 25px 50%
+    background-size: 25px 100%, 25px 50%, 25px 50%;
   }
   80% {
-    background-size: 25px 100%, 25px 100%, 25px 50%
+    background-size: 25px 100%, 25px 100%, 25px 50%;
   }
   100% {
-    background-size: 25px 100%, 25px 100%, 25px 100%
+    background-size: 25px 100%, 25px 100%, 25px 100%;
   }
 }
+
+/*# sourceMappingURL=LoadingComponent.module.css.map */

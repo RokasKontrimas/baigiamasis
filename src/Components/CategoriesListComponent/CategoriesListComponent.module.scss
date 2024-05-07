@@ -1,0 +1,13 @@
+@use '../../../src/styles/partials/responsive';
+
+.categoriesList {
+  display: flex;
+  flex-wrap: wrap;
+  @include responsive.md {
+    justify-content: flex-start;
+  }
+  @include responsive.lg {
+    justify-content: center;
+  }
+
+}

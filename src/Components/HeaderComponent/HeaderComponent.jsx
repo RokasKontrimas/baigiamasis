@@ -7,6 +7,9 @@ const HeaderComponent = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
 
     const returnNavLink = (path, title, styleClass) => {
+        if (path[0] === '/') {
+            path[0] = '';
+        }
         return (
             <NavLink to={`/${path}`}>
                 {({isActive}) => (
@@ -41,11 +44,11 @@ const HeaderComponent = () => {
                     <li className={styles.dropdown}>
                         <button className={styles.dropdownButton}>Create</button>
                         <div className={styles.dropdownContent}>
-                            {returnNavLink('hi', 'Obacki', styles.active)}
+                            {returnNavLink('cagetory-create', 'Category', styles.active)}
                         </div>
                     </li>
                     <li></li>
-                    <li>{returnNavLink('test', 'Obacki', styles.active)}</li>
+                    <li>{returnNavLink('categories', 'Categories', styles.active)}</li>
                 </ul>
             </nav>
             <i

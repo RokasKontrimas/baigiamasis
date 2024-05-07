@@ -2,37 +2,44 @@
   "categories": [
     {
       "id": "1",
-      "name": "Mammals"
+      "name": "Mammals",
+      "description": "Animals that typically have fur or hair, give birth to live young, and nurse their offspring with milk."
     },
     {
       "id": "2",
-      "name": "Amphibians"
+      "name": "Amphibians",
+      "description": "Cold-blooded vertebrates that usually lay eggs in water and undergo metamorphosis from aquatic larvae to terrestrial adults."
     },
     {
       "id": "3",
-      "name": "Reptiles"
+      "name": "Reptiles",
+      "description": "Cold-blooded vertebrates characterized by scales, laying eggs on land, and having a lung-based respiratory system."
     },
     {
       "id": "4",
-      "name": "Birds"
+      "name": "Birds",
+      "description": "Warm-blooded vertebrates with feathers, beaks, and lay hard-shelled eggs. They are known for their ability to fly."
     },
     {
       "id": "5",
-      "name": "Cats"
+      "name": "Cats",
+      "description": "Small carnivorous mammals known for their retractable claws, sharp teeth, and agility. They are popular as pets."
     },
     {
       "id": "6",
-      "name": "Insects"
+      "name": "Insects",
+      "description": "Small invertebrates with six legs and typically one or two pairs of wings. They undergo metamorphosis and play vital roles in ecosystems."
     },
     {
       "id": "7",
-      "name": "Fish"
+      "name": "Fish",
+      "description": "Aquatic vertebrates with gills, fins, and scales. They breathe through gills and are adapted to life in water."
     }
   ],
   "animals": [
     {
       "id": "1",
-      "imageUrl": "https://www.hdwallpapers.in/download/horizontal_wallpaper_featuring_a_majestic_elephant_standing_tall_in_african_landscape_at_sunset_hd_elephant-1920x1080.jpg",
+      "imageUrl": "https://images6.alphacoders.com/462/thumbbig-462437.webp",
       "name": "African Elephant",
       "species": "Loxodonta africana",
       "habitat": "African savanna",
@@ -74,10 +81,7 @@
       "id": "5",
       "imageUrl": "https://i0.wp.com/www.kickingdesigns.com/wp-content/uploads/2017/07/gorilla-7-17-2017_full-hd.jpg?fit=1920%2C1080&ssl=1",
       "name": "Gorilla",
-      "species": [
-        "Gorilla beringei",
-        "Gorilla gorilla"
-      ],
+      "species": "Gorilla beringei",
       "habitat": "African rainforests",
       "conservation_status": [
         "Endangered",
@@ -118,7 +122,7 @@
     },
     {
       "id": "9",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqzJIDmmGx7utAaG2_u719rn9O7A_jFdRt_j30QJoQNQ&s",
+      "imageUrl": "https://assets.newatlas.com/dims4/default/b4898f0/2147483647/strip/true/crop/1920x1080+0+0/resize/1920x1080!/quality/90/?url=http%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2Farchive%2Fblue-whale-1.jpg",
       "name": "Blue Whale",
       "species": "Balaenoptera musculus",
       "habitat": "Oceans worldwide",
@@ -138,7 +142,7 @@
     },
     {
       "id": "11",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGaU-i10FeywGd_0fZtoBKU2EyNxD0uUogjQUDx-cP5Q&s",
+      "imageUrl": "https://get.wallhere.com/photo/1920x1080-px-amphibian-animals-frog-poison-dart-frogs-1097085.jpg",
       "name": "Amazon Rainforest Frog",
       "species": "Dendrobatidae",
       "habitat": "Amazon Rainforest",
@@ -158,7 +162,7 @@
     },
     {
       "id": "13",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjElYbKYPTDLZN1xg3kfcBN8u-5beh29JmDAvCE7XQGw&s",
+      "imageUrl": "https://h2.gifposter.com/bingImages/GiantTortoise_1920x1080.jpg",
       "name": "Galapagos Giant Tortoise",
       "species": "Chelonoidis nigra",
       "habitat": "Galapagos Islands",
@@ -178,7 +182,7 @@
     },
     {
       "id": "15",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6mz-YgFdvxOdl2Ml6VZZeWknz0-kIFVy5-intz3Ar2Q&s",
+      "imageUrl": "https://www.bornfree.org.uk/wp-content/uploads/2023/08/Pangolin-adopt-hero-Dr-Sanjay-Kumar-Shukla.jpg",
       "name": "Pangolin",
       "species": "Manis",
       "habitat": "Africa and Asia",
@@ -288,7 +292,7 @@
     },
     {
       "id": "26",
-      "imageUrl": "https://www.rekoforest.org/wp-content/uploads/2021/09/rer-sunda-flying-lemur-1.jpg",
+      "imageUrl": "https://filmfreeway-production-storage-01-storage.filmfreeway.com/press_kits/trailer_stills/001/791/148/original/screenshot.jpg?1618303616",
       "name": "Sunda Flying Lemur",
       "species": "Galeopterus variegatus",
       "habitat": "Southeast Asia",
@@ -298,7 +302,7 @@
     },
     {
       "id": "27",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlJvTiUcqcEk1gpkMnWxdLyUdLDmzKqtw6Iu8ot0FEUQ&s",
+      "imageUrl": "https://wallpapercave.com/wp/wp2120166.jpg",
       "name": "Giant Otter",
       "species": "Pteronura brasiliensis",
       "habitat": "South America",
@@ -318,7 +322,7 @@
     },
     {
       "id": "29",
-      "imageUrl": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa67a3ac-9666-402a-a623-f1961ce4f4db/d5mgb9p-200853d2-f168-4ac2-82d3-fd6cd6b47438.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2FhNjdhM2FjLTk2NjYtNDAyYS1hNjIzLWYxOTYxY2U0ZjRkYlwvZDVtZ2I5cC0yMDA4NTNkMi1mMTY4LTRhYzItODJkMy1mZDZjZDZiNDc0MzguanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.MTB7js_pTEK3WVtAucgjbmfWof_XzC1w1Q30ZVigylU",
+      "imageUrl": "https://wallpapersmug.com/download/1920x1080/c6afc5/cute-red-panda-play-4k.jpg",
       "name": "Red Panda",
       "species": "Ailurus fulgens",
       "habitat": "Himalayas and southwestern China",
@@ -348,9 +352,9 @@
     },
     {
       "id": "32",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrHvRbkWW-BTLMNe8lBQruX1lR_yze9zLVtQ&usqp=CAU",
+      "imageUrl": "https://wallpapers.com/images/hd/gorilla-desktop-rzl21fjhepjxdx1q.jpg",
       "name": "Mountain Gorilla",
-      "species": "Gorilla beringei beringei",
+      "species": "Gorilla beringei",
       "habitat": "Mountain forests of Africa",
       "conservation_status": "Endangered",
       "description": "The mountain gorilla is a subspecies of the eastern gorilla found in the mountain forests of Africa. It is one of the most endangered apes in the world.",
