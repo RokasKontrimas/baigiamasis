@@ -1,0 +1,139 @@
+header {
+  background-color: #000000;
+  padding: 10px 0;
+  z-index: 100;
+  position: sticky;
+  top: 0;
+}
+@media screen and (max-width: 500px) {
+  header.navPadding {
+    padding: 30px 0;
+  }
+}
+header .mobileLogoWrapper {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  header .mobileLogoWrapper {
+    display: block;
+    padding-left: 10px;
+  }
+  header .mobileLogoWrapper img {
+    width: 48px;
+  }
+}
+header nav {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+header nav .logoWrapper img {
+  width: 48px;
+}
+@media screen and (max-width: 500px) {
+  header nav .logoWrapper img {
+    padding-top: 10px;
+  }
+}
+header nav ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #FF6501;
+  transition: ease 0.1s;
+}
+header nav ul li a.active {
+  color: #fd9d08;
+  font-weight: 500;
+}
+header nav ul li a:hover {
+  transition: ease 0.2s;
+  color: #fd9d08;
+}
+header nav ul .dropdown {
+  position: relative;
+  display: inline-block;
+}
+header nav ul .dropdown .dropdownButton {
+  color: white;
+  background-color: transparent;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: ease-in 0.15s;
+}
+header nav ul .dropdown .dropdownButton:hover {
+  color: #FF6501;
+}
+header nav ul .dropdown .dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+header nav ul .dropdown .dropdownContent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+header nav ul .dropdown .dropdownContent a:hover {
+  background-color: #f1f1f1;
+}
+header nav ul .dropdown:hover .dropdownContent {
+  display: block;
+}
+@media screen and (max-width: 500px) {
+  header nav {
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+    z-index: 999;
+  }
+  header nav ul {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) and (max-width: 500px) {
+  header .faBars {
+    font-size: 24px;
+    color: white;
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 500px) {
+  header.open-nav nav {
+    transform: translateX(0);
+  }
+}
+
+.faBars {
+  display: none;
+}
+
+/*# sourceMappingURL=HeaderComponent.module.css.map */

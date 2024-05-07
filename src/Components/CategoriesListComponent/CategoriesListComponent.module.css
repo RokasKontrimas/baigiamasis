@@ -1,0 +1,16 @@
+.categoriesList {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 500px) {
+  .categoriesList {
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 900px) {
+  .categoriesList {
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=CategoriesListComponent.module.css.map */
