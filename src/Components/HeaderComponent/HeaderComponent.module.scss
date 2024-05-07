@@ -63,8 +63,11 @@ header {
           color: variables.$orange;
           transition: ease 0.1s;
 
-          &.active {
+          & span.active {
             color: variables.$active;
+            background-color: rgba(variables.$dark-red, 0.2);
+            border-radius: 5px;
+            padding: 5px;
             font-weight: 500;
           }
 

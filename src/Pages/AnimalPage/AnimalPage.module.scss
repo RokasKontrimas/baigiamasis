@@ -1,0 +1,87 @@
+@use '../../../src/styles/partials/variables';
+@use '../../../src/styles/partials/responsive';
+
+.animalWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.animalName {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.animalImage {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.categoryLink {
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 10px;
+}
+
+.animalInformation {
+  font-size: 24px;
+  text-align: left;
+}
+
+.animalDescription {
+  margin-bottom: 10px;
+}
+
+.animalSpecies,
+.animalHabitat,
+.animalConservation {
+  margin-bottom: 5px;
+}
+
+.animalSpecies span,
+.animalHabitat span,
+.animalConservation span {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.pageTitle {
+  text-align: center;
+}
+
+.relatedAnimals {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 10px;
+  padding: 0 10px;
+  @include responsive.sm {
+
+    overflow: auto; /* Allow scrolling */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+    &::-webkit-scrollbar {
+      display: none; /* Hide scrollbar in WebKit browsers */
+    }
+  }
+}
+
+.relatedAnimalItem {
+  width: 100%;
+
+  & img {
+    width: 100%;
+    @include responsive.sm {
+      width: 300px;
+    }
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
+}
+
+
+
+

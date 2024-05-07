@@ -49,6 +49,7 @@ const HeaderComponent = () => {
                     </li>
                     <li></li>
                     <li>{returnNavLink('categories', 'Categories', styles.active)}</li>
+                    <li>{returnNavLink('animals', 'Animals', styles.active)}</li>
                 </ul>
             </nav>
             <i

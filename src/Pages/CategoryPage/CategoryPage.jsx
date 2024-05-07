@@ -7,7 +7,7 @@ import styles from './CategoryPage.module.scss';
 import ContainerComponent from "../../Components/ContainerComponent/ContainerComponent.jsx";
 
 const CategoryPage = () => {
-    const {id, slug} = useParams();
+    const {id} = useParams();
     const [animals, setAnimals] = useState([]);
     const [newAnimals, setNewAnimals] = useState([]);
     const [isLoading, setIsLoading] = useState(true);

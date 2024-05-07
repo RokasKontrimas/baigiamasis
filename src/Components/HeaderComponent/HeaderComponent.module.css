@@ -54,8 +54,11 @@ header nav ul li a {
   color: #FF6501;
   transition: ease 0.1s;
 }
-header nav ul li a.active {
+header nav ul li a span.active {
   color: #fd9d08;
+  background-color: rgba(144, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 5px;
   font-weight: 500;
 }
 header nav ul li a:hover {
