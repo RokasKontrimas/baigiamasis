@@ -39,7 +39,7 @@
   "animals": [
     {
       "id": "1",
-      "imageUrl": "https://images6.alphacoders.com/462/thumbbig-462437.webp",
+      "imageUrl": "https://www.hdwallpapers.in/download/animal_elephant_hd-1920x1080.jpg",
       "name": "African Elephant",
       "species": "Loxodonta africana",
       "habitat": "African savanna",
@@ -128,7 +128,7 @@
       "habitat": "Oceans worldwide",
       "conservation_status": "Endangered",
       "description": "The blue whale is the largest animal on Earth. They are marine mammals and feed primarily on krill. They are known for their immense size and distinctive blue-gray color.",
-      "categoryId": "5"
+      "categoryId": "7"
     },
     {
       "id": "10",
@@ -332,7 +332,7 @@
     },
     {
       "id": "30",
-      "imageUrl": "https://cdn.britannica.com/17/62917-050-3A8C2A1C/monarch-butterfly-Danaus-plexippus.jpg",
+      "imageUrl": "https://images.gaiawallpapers.com/wallpapersbin.20170831/hd-1920x1080/201005181-monarch-butterfly-1920x1080.jpg",
       "name": "Monarch Butterfly",
       "species": "Danaus plexippus",
       "habitat": "North, Central, and South America",
@@ -342,7 +342,7 @@
     },
     {
       "id": "31",
-      "imageUrl": "https://wallpaperaccess.com/full/1471301.jpg",
+      "imageUrl": "https://www.pbs.org/wnet/nature/files/2020/09/pexels-frans-van-heerden-2017490.jpg",
       "name": "Cheetah",
       "species": "Acinonyx jubatus",
       "habitat": "Savannas of Africa and parts of Iran",
