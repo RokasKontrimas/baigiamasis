@@ -47,9 +47,16 @@ const HeaderComponent = () => {
                             {returnNavLink('cagetory-create', 'Category', styles.active)}
                         </div>
                     </li>
+                    <li className={styles.dropdown}>
+                        <button className={styles.dropdownButton}>Categories</button>
+                        <div className={styles.dropdownContent}>
+                            {returnNavLink('animals/categories', 'Animals', styles.active)}
+                            {returnNavLink('trees/categories', 'Trees', styles.active)}
+                        </div>
+                    </li>
                     <li></li>
-                    <li>{returnNavLink('categories', 'Categories', styles.active)}</li>
                     <li>{returnNavLink('animals', 'Animals', styles.active)}</li>
+                    <li>{returnNavLink('trees', 'Trees', styles.active)}</li>
                 </ul>
             </nav>
             <i

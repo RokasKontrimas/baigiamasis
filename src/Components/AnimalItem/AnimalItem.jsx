@@ -6,7 +6,7 @@ const AnimalItem = (props) => {
     return (
         <div className={styles.animalItem}>
             <img src={imageUrl} loading="lazy"/>
-            <Link className={styles.linkCategory} to={`/category/${categoryId}`}>{props.animal.category.name}</Link>
+            <Link className={styles.linkCategory} to={`/animals/category/${categoryId}`}>{props.animal.category.name}</Link>
             <Link className={styles.linkAnimal} to={`/animal/${id}`}>
                 <h1 className={styles.animalName}>{name}</h1>
                 <h3 className={styles.animalSpecies}>{species}</h3>

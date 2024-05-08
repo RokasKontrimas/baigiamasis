@@ -1,5 +1,8 @@
 @use '../../../src/styles/partials/variables';
 @use '../../../src/styles/partials/responsive';
+.pageTitle {
+  text-align: center;
+}
 .relatedData {
   display: flex;
   justify-content: flex-start;

@@ -3,10 +3,10 @@ import {useEffect, useState} from "react";
 import axios from "../../axios.jsx";
 import LoadingComponent from "../../Components/LoadingComponent/LoadingComponent.jsx";
 import {Carousel} from "react-responsive-carousel";
-import styles from './CategoryPage.module.scss';
+import styles from './AnimalCategoryPage.module.scss';
 import ContainerComponent from "../../Components/ContainerComponent/ContainerComponent.jsx";
 
-const CategoryPage = () => {
+const AnimalCategoryPage = () => {
     const {id} = useParams();
     const [animals, setAnimals] = useState([]);
     const [newAnimals, setNewAnimals] = useState([]);
@@ -109,4 +109,4 @@ const CategoryPage = () => {
     );
 };
 
-export default CategoryPage;
+export default AnimalCategoryPage;

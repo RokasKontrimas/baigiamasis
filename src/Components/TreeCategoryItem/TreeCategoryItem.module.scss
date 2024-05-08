@@ -1,0 +1,20 @@
+@use '../../../src/styles/partials/variables';
+@use '../../../src/styles/partials/responsive';
+
+.wrapper {
+  text-align: center;
+  width: 400px;
+  @include responsive.md {
+    width: 250px;
+  }
+  @include responsive.lg {
+    width: 350px;
+  }
+  height: 100%;
+  margin-top: 15px;
+}
+
+.treeCategoryItem {
+  text-decoration: none;
+  color: variables.$black;
+}

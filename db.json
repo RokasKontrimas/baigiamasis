@@ -36,6 +36,308 @@
       "description": "Aquatic vertebrates with gills, fins, and scales. They breathe through gills and are adapted to life in water."
     }
   ],
+  "relatedAnimals": [
+    {
+      "id": "f23d",
+      "counter": "19",
+      "animalId": "1"
+    },
+    {
+      "id": "7f79",
+      "counter": "52",
+      "animalId": "1"
+    },
+    {
+      "id": "40f8",
+      "counter": "67",
+      "animalId": "2"
+    },
+    {
+      "id": "0dda",
+      "counter": "168",
+      "animalId": "2"
+    },
+    {
+      "id": "ce19",
+      "counter": "220",
+      "animalId": "3"
+    },
+    {
+      "id": "11ca",
+      "counter": "168",
+      "animalId": "3"
+    },
+    {
+      "id": "c345",
+      "counter": "377",
+      "animalId": "4"
+    },
+    {
+      "id": "54ed",
+      "counter": "238",
+      "animalId": "4"
+    },
+    {
+      "id": "4eb8",
+      "counter": "198",
+      "animalId": "5"
+    },
+    {
+      "id": "a505",
+      "counter": "53",
+      "animalId": "5"
+    },
+    {
+      "id": "a4e6",
+      "counter": "551",
+      "animalId": "6"
+    },
+    {
+      "id": "c618",
+      "counter": "273",
+      "animalId": "6"
+    },
+    {
+      "id": "e5f0",
+      "counter": "519",
+      "animalId": "7"
+    },
+    {
+      "id": "3a52",
+      "counter": "511",
+      "animalId": "7"
+    },
+    {
+      "id": "8b91",
+      "counter": "202",
+      "animalId": "8"
+    },
+    {
+      "id": "5fc3",
+      "counter": "316",
+      "animalId": "8"
+    },
+    {
+      "id": "e3ed",
+      "counter": "723",
+      "animalId": "9"
+    },
+    {
+      "id": "4854",
+      "counter": "401",
+      "animalId": "9"
+    },
+    {
+      "id": "cdc6",
+      "counter": "943",
+      "animalId": "10"
+    },
+    {
+      "id": "0f6b",
+      "counter": "177",
+      "animalId": "10"
+    },
+    {
+      "id": "874f",
+      "counter": "816",
+      "animalId": "11"
+    },
+    {
+      "id": "9743",
+      "counter": "376",
+      "animalId": "11"
+    },
+    {
+      "id": "c70f",
+      "counter": "168",
+      "animalId": "12"
+    },
+    {
+      "id": "3058",
+      "counter": "87",
+      "animalId": "12"
+    },
+    {
+      "id": "622b",
+      "counter": "674",
+      "animalId": "14"
+    },
+    {
+      "id": "6e1b",
+      "counter": "1375",
+      "animalId": "14"
+    },
+    {
+      "id": "b277",
+      "counter": "840",
+      "animalId": "15"
+    },
+    {
+      "id": "b653",
+      "counter": "660",
+      "animalId": "15"
+    },
+    {
+      "id": "f2aa",
+      "counter": "98",
+      "animalId": "16"
+    },
+    {
+      "id": "2d59",
+      "counter": "1240",
+      "animalId": "16"
+    },
+    {
+      "id": "3c89",
+      "counter": "1003",
+      "animalId": "17"
+    },
+    {
+      "id": "2498",
+      "counter": "1139",
+      "animalId": "17"
+    },
+    {
+      "id": "b598",
+      "counter": "1391",
+      "animalId": "18"
+    },
+    {
+      "id": "a015",
+      "counter": "1351",
+      "animalId": "18"
+    },
+    {
+      "id": "9933",
+      "counter": "973",
+      "animalId": "19"
+    },
+    {
+      "id": "1801",
+      "counter": "1008",
+      "animalId": "19"
+    },
+    {
+      "id": "b143",
+      "counter": "1892",
+      "animalId": "20"
+    },
+    {
+      "id": "7078",
+      "counter": "1357",
+      "animalId": "20"
+    },
+    {
+      "id": "7d58",
+      "counter": "1146",
+      "animalId": "21"
+    },
+    {
+      "id": "cb35",
+      "counter": "178",
+      "animalId": "21"
+    },
+    {
+      "id": "a2d7",
+      "counter": "733",
+      "animalId": "22"
+    },
+    {
+      "id": "d813",
+      "counter": "1102",
+      "animalId": "22"
+    },
+    {
+      "id": "9e37",
+      "counter": "362",
+      "animalId": "23"
+    },
+    {
+      "id": "c971",
+      "counter": "1957",
+      "animalId": "23"
+    },
+    {
+      "id": "8979",
+      "counter": "458",
+      "animalId": "24"
+    },
+    {
+      "id": "4fa9",
+      "counter": "256",
+      "animalId": "24"
+    },
+    {
+      "id": "3f7e",
+      "counter": "940",
+      "animalId": "25"
+    },
+    {
+      "id": "5272",
+      "counter": "2176",
+      "animalId": "25"
+    },
+    {
+      "id": "9fda",
+      "counter": "132",
+      "animalId": "26"
+    },
+    {
+      "id": "3e09",
+      "counter": "2360",
+      "animalId": "26"
+    },
+    {
+      "id": "528f",
+      "counter": "1070",
+      "animalId": "28"
+    },
+    {
+      "id": "4123",
+      "counter": "498",
+      "animalId": "28"
+    },
+    {
+      "id": "2188",
+      "counter": "589",
+      "animalId": "29"
+    },
+    {
+      "id": "8706",
+      "counter": "2464",
+      "animalId": "29"
+    },
+    {
+      "id": "3ae4",
+      "counter": "1331",
+      "animalId": "30"
+    },
+    {
+      "id": "e24a",
+      "counter": "481",
+      "animalId": "30"
+    },
+    {
+      "id": "effa",
+      "counter": "2338",
+      "animalId": "31"
+    },
+    {
+      "id": "88bb",
+      "counter": "2588",
+      "animalId": "31"
+    },
+    {
+      "id": "66ad",
+      "counter": "188",
+      "animalId": "32"
+    },
+    {
+      "id": "ed25",
+      "counter": "331",
+      "animalId": "32"
+    }
+  ],
   "animals": [
     {
       "id": "1",
@@ -1032,6 +1334,337 @@
       "description": "Black locusts are fast-growing trees planted as windbreaks and for their nitrogen-fixing ability in poor soils.",
       "scientificName": "Robinia pseudoacacia"
     }
+  ],
+  "relatedTrees": [
+    {
+      "id": "cee1",
+      "counter": "3",
+      "treeId": "1"
+    },
+    {
+      "id": "9283",
+      "counter": "19",
+      "treeId": "2"
+    },
+    {
+      "id": "94b5",
+      "counter": "167",
+      "treeId": "3"
+    },
+    {
+      "id": "4260",
+      "counter": "167",
+      "treeId": "4"
+    },
+    {
+      "id": "6e52",
+      "counter": "286",
+      "treeId": "6"
+    },
+    {
+      "id": "c62f",
+      "counter": "619",
+      "treeId": "7"
+    },
+    {
+      "id": "b1b6",
+      "counter": "712",
+      "treeId": "8"
+    },
+    {
+      "id": "05fa",
+      "counter": "248",
+      "treeId": "9"
+    },
+    {
+      "id": "628e",
+      "counter": "585",
+      "treeId": "10"
+    },
+    {
+      "id": "c917",
+      "counter": "108",
+      "treeId": "11"
+    },
+    {
+      "id": "70f7",
+      "counter": "368",
+      "treeId": "13"
+    },
+    {
+      "id": "3fab",
+      "counter": "1349",
+      "treeId": "14"
+    },
+    {
+      "id": "4a07",
+      "counter": "182",
+      "treeId": "15"
+    },
+    {
+      "id": "50ff",
+      "counter": "734",
+      "treeId": "16"
+    },
+    {
+      "id": "155f",
+      "counter": "188",
+      "treeId": "18"
+    },
+    {
+      "id": "d7a6",
+      "counter": "941",
+      "treeId": "19"
+    },
+    {
+      "id": "cb7b",
+      "counter": "1757",
+      "treeId": "20"
+    },
+    {
+      "id": "5b18",
+      "counter": "128",
+      "treeId": "21"
+    },
+    {
+      "id": "78f8",
+      "counter": "305",
+      "treeId": "22"
+    },
+    {
+      "id": "2d13",
+      "counter": "532",
+      "treeId": "23"
+    },
+    {
+      "id": "d171",
+      "counter": "1192",
+      "treeId": "24"
+    },
+    {
+      "id": "9030",
+      "counter": "743",
+      "treeId": "25"
+    },
+    {
+      "id": "38a4",
+      "counter": "243",
+      "treeId": "26"
+    },
+    {
+      "id": "ea3c",
+      "counter": "973",
+      "treeId": "28"
+    },
+    {
+      "id": "41f9",
+      "counter": "1778",
+      "treeId": "29"
+    },
+    {
+      "id": "42df",
+      "counter": "1271",
+      "treeId": "30"
+    },
+    {
+      "id": "138c",
+      "counter": "683",
+      "treeId": "31"
+    },
+    {
+      "id": "5363",
+      "counter": "154",
+      "treeId": "32"
+    },
+    {
+      "id": "e6c1",
+      "counter": "7",
+      "treeId": "33"
+    },
+    {
+      "id": "fe28",
+      "counter": "1948",
+      "treeId": "34"
+    },
+    {
+      "id": "625c",
+      "counter": "427",
+      "treeId": "35"
+    },
+    {
+      "id": "7aa9",
+      "counter": "390",
+      "treeId": "36"
+    },
+    {
+      "id": "e565",
+      "counter": "2123",
+      "treeId": "37"
+    },
+    {
+      "id": "37c0",
+      "counter": "3082",
+      "treeId": "38"
+    },
+    {
+      "id": "cc00",
+      "counter": "2217",
+      "treeId": "39"
+    },
+    {
+      "id": "1dc7",
+      "counter": "1420",
+      "treeId": "40"
+    },
+    {
+      "id": "1e72",
+      "counter": "2640",
+      "treeId": "41"
+    },
+    {
+      "id": "46dd",
+      "counter": "3420",
+      "treeId": "42"
+    },
+    {
+      "id": "700a",
+      "counter": "1664",
+      "treeId": "43"
+    },
+    {
+      "id": "00dc",
+      "counter": "3932",
+      "treeId": "44"
+    },
+    {
+      "id": "4029",
+      "counter": "4398",
+      "treeId": "45"
+    },
+    {
+      "id": "2952",
+      "counter": "3272",
+      "treeId": "46"
+    },
+    {
+      "id": "d1a8",
+      "counter": "2330",
+      "treeId": "48"
+    },
+    {
+      "id": "9469",
+      "counter": "4081",
+      "treeId": "49"
+    },
+    {
+      "id": "0f2d",
+      "counter": "779",
+      "treeId": "50"
+    },
+    {
+      "id": "adb6",
+      "counter": "3563",
+      "treeId": "52"
+    },
+    {
+      "id": "8f02",
+      "counter": "485",
+      "treeId": "53"
+    },
+    {
+      "id": "8976",
+      "counter": "2284",
+      "treeId": "55"
+    },
+    {
+      "id": "f1ea",
+      "counter": "5169",
+      "treeId": "56"
+    },
+    {
+      "id": "35be",
+      "counter": "977",
+      "treeId": "58"
+    },
+    {
+      "id": "e72b",
+      "counter": "3973",
+      "treeId": "59"
+    },
+    {
+      "id": "1df2",
+      "counter": "1254",
+      "treeId": "60"
+    },
+    {
+      "id": "b958",
+      "counter": "5454",
+      "treeId": "61"
+    },
+    {
+      "id": "100d",
+      "counter": "5259",
+      "treeId": "62"
+    },
+    {
+      "id": "7484",
+      "counter": "5998",
+      "treeId": "63"
+    },
+    {
+      "id": "3ff5",
+      "counter": "2350",
+      "treeId": "64"
+    },
+    {
+      "id": "899c",
+      "counter": "1250",
+      "treeId": "65"
+    },
+    {
+      "id": "3746",
+      "counter": "3811",
+      "treeId": "66"
+    },
+    {
+      "id": "de07",
+      "counter": "393",
+      "treeId": "67"
+    },
+    {
+      "id": "11f9",
+      "counter": "4972",
+      "treeId": "69"
+    },
+    {
+      "id": "b8d7",
+      "counter": "4891",
+      "treeId": "71"
+    },
+    {
+      "id": "a49a",
+      "counter": "1531",
+      "treeId": "72"
+    },
+    {
+      "id": "2c6d",
+      "counter": "3452",
+      "treeId": "73"
+    },
+    {
+      "id": "7d39",
+      "counter": "7153",
+      "treeId": "74"
+    },
+    {
+      "id": "37ad",
+      "counter": "6705",
+      "treeId": "75"
+    },
+    {
+      "id": "4a84",
+      "counter": "1476",
+      "treeId": "76"
+    }
   ]
 }
-

@@ -1,3 +1,7 @@
+.pageTitle {
+  text-align: center;
+}
+
 .relatedData {
   display: flex;
   justify-content: flex-start;
