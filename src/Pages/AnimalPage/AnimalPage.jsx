@@ -5,6 +5,7 @@ import axios from "../../axios.jsx";
 import ContainerComponent from "../../Components/ContainerComponent/ContainerComponent.jsx";
 import LoadingComponent from "../../Components/LoadingComponent/LoadingComponent.jsx";
 import RelatedItemsComponent from "../../Components/RelatedItemsComponent/RelatedItemsComponent.jsx";
+import {sortData} from "../../Helpers/Helpers.jsx";
 
 const AnimalPage = () => {
     const [animal, setAnimal] = useState('')
@@ -12,8 +13,18 @@ const AnimalPage = () => {
     const [isLoading, setIsLoading] = useState(true)
     const [relatedAnimals, setRelatedAnimals] = useState([])
     const {id} = useParams()
+    const {name, species, imageUrl, habitat, conservation_status, description, categoryId} = animal
 
     useEffect(() => {
+        const getRelated = async () => {
+            const data = await sortData('/relatedAnimals?_embed=animal', true, true);
+            setRelatedAnimals(data);
+        }
+        getRelated();
+    }, []);
+
+    useEffect(() => {
+
         const fetchAnimal = async () => {
             try {
                 const response = await axios.get(`/animals/${id}?_embed=category`);
@@ -27,39 +38,6 @@ const AnimalPage = () => {
 
         fetchAnimal();
     }, [id]);
-
-    useEffect(() => {
-        if (category.id) {
-            const getRelatedAnimals = async () => {
-                try {
-                    const response = await axios.get(`/animals?categoryId=${category.id}`);
-                    const allAnimals = response.data;
-
-                    // Shuffle the array to ensure random selection
-                    const shuffledAnimals = shuffleArray(allAnimals);
-
-
-                    setRelatedAnimals(shuffledAnimals.splice(0,3));
-                } catch (error) {
-                    console.error("Error fetching related animals:", error);
-                }
-            };
-
-            getRelatedAnimals();
-        }
-    }, [category.id,id]);
-
-    const shuffleArray = (array) => {
-        // Fisher-Yates shuffle algorithm
-        for (let i = array.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [array[i], array[j]] = [array[j], array[i]];
-        }
-        return array;
-    };
-
-
-    const {name, species, imageUrl, habitat, conservation_status, description, categoryId} = animal
     return (
         <ContainerComponent>
             {isLoading ? (<LoadingComponent/>) : (

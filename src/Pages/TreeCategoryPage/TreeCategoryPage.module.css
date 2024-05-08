@@ -2,12 +2,20 @@
   text-align: center;
 }
 
+.pageIntro {
+  text-align: center;
+}
+
+.pageSubtitle {
+  text-align: center;
+}
+
 .description {
   text-align: center;
   padding: 0 10px;
 }
 
-.animalWrapper {
+.treeWrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
@@ -15,40 +23,40 @@
   gap: 20px;
 }
 @media screen and (max-width: 500px) {
-  .animalWrapper {
+  .treeWrapper {
     grid-template-columns: 1fr;
   }
 }
 @media screen and (min-width: 500px) {
-  .animalWrapper {
+  .treeWrapper {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media screen and (min-width: 900px) {
-  .animalWrapper {
+  .treeWrapper {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-.animalWrapper img {
+.treeWrapper img {
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: fill;
   transition: ease-in 0.1s;
 }
-.animalWrapper img:hover {
+.treeWrapper img:hover {
   transition: ease-in 0.1s;
   margin-bottom: 10px;
   scale: 1.1;
 }
-.animalWrapper .animalItem {
+.treeWrapper .treeItem {
   overflow: hidden;
   display: flex;
   flex-direction: column;
 }
-.animalWrapper .animalItem a {
+.treeWrapper .treeItem a {
   text-decoration: none;
   color: #000000;
   padding-left: 5px;
 }
 
-/*# sourceMappingURL=CategoryPage.module.css.map */
+/*# sourceMappingURL=TreeCategoryPage.module.css.map */

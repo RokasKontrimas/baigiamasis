@@ -1,0 +1,23 @@
+.wrapper {
+  text-align: center;
+  width: 400px;
+  height: 100%;
+  margin-top: 15px;
+}
+@media screen and (min-width: 500px) {
+  .wrapper {
+    width: 250px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .wrapper {
+    width: 350px;
+  }
+}
+
+.treeCategoryItem {
+  text-decoration: none;
+  color: #000000;
+}
+
+/*# sourceMappingURL=TreeCategoryItem.module.css.map */

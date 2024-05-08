@@ -1,0 +1,25 @@
+.treeCategoriesWrapper {
+  display: grid;
+}
+@media screen and (max-width: 500px) {
+  .treeCategoriesWrapper {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .treeCategoriesWrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 0 10px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .treeCategoriesWrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 0 10px;
+  }
+}
+
+/*# sourceMappingURL=TreesCategoriesList.module.css.map */

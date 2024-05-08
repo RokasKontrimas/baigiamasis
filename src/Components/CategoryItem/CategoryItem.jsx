@@ -5,7 +5,7 @@ const CategoryItem = (props) => {
     return (
         <div className={styles.wrapper} >
             <Link className={styles.categoryItem}
-                to={`/category/${data.id}`}>{data.name} ({data.animals.length})</Link>
+                to={`/animals/category/${data.id}`}>{data.name} ({data.animals.length})</Link>
         </div>
     )
 }

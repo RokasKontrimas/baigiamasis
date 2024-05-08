@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react'
 import axios from "../../axios.jsx";
-import styles from './CategoriesPage.module.scss'
+import styles from './AnimalCategoriesPage.module.scss'
 import ContainerComponent from "../../Components/ContainerComponent/ContainerComponent.jsx";
 import LoadingComponent from "../../Components/LoadingComponent/LoadingComponent.jsx";
 import CategoriesListComponent from "../../Components/CategoriesListComponent/CategoriesListComponent.jsx";
 
-const CategoriesPage = () => {
+const AnimalCategoriesPage = () => {
     const [categories, setCategories] = useState([])
     const [isLoading, setIsLoading] = useState(true)
     useEffect(() => {
@@ -33,4 +33,4 @@ const CategoriesPage = () => {
         </ContainerComponent>
     )
 }
-export default CategoriesPage
+export default AnimalCategoriesPage

@@ -1,0 +1,78 @@
+@use '../../../src/styles/partials/variables';
+@use '../../../src/styles/partials/responsive';
+
+.treeWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+  width: 100%;
+
+  .settingsItems {
+    position: absolute;
+    left: 50%;
+    transform: translate(65%);
+    width: 80px;
+    height: 50px;
+    background-color: #000000;
+    padding: 10px;
+    display: flex;
+    font-size: 18px;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .settings {
+    padding-left: 10px;
+    padding-top: 20px;
+    transition: ease 0.1s;
+
+    &:hover {
+      transition: ease 0.15s;
+      color: blue;
+    }
+
+
+  }
+}
+
+.isToggled {
+  color: blue;
+}
+
+.treeName {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.treeImage {
+  width: 100%;
+  aspect-ratio: 1.33/1;
+  margin-bottom: 10px;
+}
+
+.categoryLink {
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 10px;
+}
+
+.treeInformation {
+  font-size: 24px;
+  text-align: left;
+}
+
+.animalDescription {
+  margin-bottom: 10px;
+}
+
+.pageTitle {
+  text-align: center;
+}
+
+
+
+
+
