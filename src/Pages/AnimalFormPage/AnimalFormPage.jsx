@@ -16,6 +16,7 @@ const AnimalFormPage = () => {
     const [conservationStatus, setConversationStatus] = useState('')
     const [description, setDescription] = useState('');
     const [categories, setCategories] = useState([])
+    const [image,setImage] = useState('')
     const [selectedCategory, setSelectedCategory] = useState('default')
     const navigate = useNavigate()
     const [isLoading, setIsLoading] = useState(true)
@@ -33,6 +34,7 @@ const AnimalFormPage = () => {
                             setConversationStatus(res.data.conservation_status)
                             setDescription(res.data.description)
                             setSelectedCategory(res.data.category.id)
+                            setImage(res.data.imageUrl)
                             setIsLoading(false)
                         })
                 } catch (e) {
@@ -62,6 +64,7 @@ const AnimalFormPage = () => {
             habitat,
             "conversation_status": conservationStatus,
             categoryId: selectedCategory,
+            imageUrl: image
         }
         if (id) {
             await axios.patch(`/animals/${id}`, animal)
@@ -83,6 +86,14 @@ const AnimalFormPage = () => {
                     onFormSubmitHandler(e)
                 }}>
                     <h1 className={styles.pageTitle}>{id ? (`Editing ${name}`) : ('Creating new ')}</h1>
+                    <TextInputLabeled
+                        labelName='Image link'
+                        id='image'
+                        name='image'
+                        type='text'
+                        stateValue={image}
+                        onStateChange={setImage}
+                    />
                     <TextInputLabeled
                         labelName='Animal name'
                         id='name'

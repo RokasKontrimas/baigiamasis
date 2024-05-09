@@ -28,7 +28,7 @@ const TreesFormPage = () => {
                         .then((res) => {
                             setName(res.data.name)
                             setDescription(res.data.description)
-                            setSelectedCategory(res.data.category.id)
+                            setSelectedCategory(res.data.treeCategoryId)
                             setScientificName(res.data.scientificName)
                             setImage(res.data.imageUrl)
                             setIsLoading(false)
