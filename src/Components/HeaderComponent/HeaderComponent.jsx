@@ -8,7 +8,7 @@ const HeaderComponent = () => {
 
     const returnNavLink = (path, title, styleClass) => {
         if (path[0] === '/') {
-            path[0] = '';
+            path = path.slice(1);
         }
         return (
             <NavLink to={`/${path}`}>
@@ -57,7 +57,6 @@ const HeaderComponent = () => {
                             {returnNavLink('trees/categories', 'Trees', styles.active)}
                         </div>
                     </li>
-                    <li></li>
                     <li>{returnNavLink('animals', 'Animals', styles.active)}</li>
                     <li>{returnNavLink('trees', 'Trees', styles.active)}</li>
                 </ul>

@@ -65,7 +65,9 @@ header {
 
           & span.active {
             color: variables.$active;
-            background-color: rgba(variables.$dark-red, 0.2);
+            @include responsive.sm {
+              background-color: rgba(variables.$dark-red, 0.2);
+            }
             border-radius: 5px;
             padding: 5px;
             font-weight: 500;
