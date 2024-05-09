@@ -1,39 +1,35 @@
-import styles from './AnimalFormPage.module.scss'
+import {useEffect, useState} from 'react'
 import {useNavigate, useParams} from "react-router-dom";
-import {useEffect, useState} from "react";
 import axios from "../../axios.jsx";
+import ContainerComponent from "../../Components/ContainerComponent/ContainerComponent.jsx";
+import LoadingComponent from "../../Components/LoadingComponent/LoadingComponent.jsx";
+import styles from "../AnimalFormPage/AnimalFormPage.module.scss";
 import TextInputLabeled from "../../Components/TextInputLabeled/TextInputLabeled.jsx";
 import TextAreaLabeled from "../../Components/TextAreaLabeled/TextAreaLabeled.jsx";
 import SelectInputLabeled from "../../Components/SelectInputLabeled/SelectInputLabeled.jsx";
-import ContainerComponent from "../../Components/ContainerComponent/ContainerComponent.jsx";
-import LoadingComponent from "../../Components/LoadingComponent/LoadingComponent.jsx";
 
-const AnimalFormPage = () => {
+const TreesFormPage = () => {
     const {id} = useParams()
     const [name, setName] = useState('')
-    const [species, setSpecies] = useState('')
-    const [habitat, setHabitat] = useState('')
-    const [conservationStatus, setConversationStatus] = useState('')
     const [description, setDescription] = useState('');
     const [categories, setCategories] = useState([])
-    const [image,setImage] = useState('')
     const [selectedCategory, setSelectedCategory] = useState('default')
+    const [scientificName, setScientificName] = useState('')
+    const [image, setImage] = useState('')
     const navigate = useNavigate()
     const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
 
         if (id) {
-            const getAnimal = async () => {
+            const getTree = async () => {
                 try {
-                    await axios.get(`/animals/${id}?_embed=category`)
+                    await axios.get(`/trees/${id}?_embed=treesCategory`)
                         .then((res) => {
                             setName(res.data.name)
-                            setSpecies(res.data.species)
-                            setHabitat(res.data.habitat)
-                            setConversationStatus(res.data.conservation_status)
                             setDescription(res.data.description)
-                            setSelectedCategory(res.data.category.id)
+                            setSelectedCategory(res.data.treeCategoryId)
+                            setScientificName(res.data.scientificName)
                             setImage(res.data.imageUrl)
                             setIsLoading(false)
                         })
@@ -41,13 +37,14 @@ const AnimalFormPage = () => {
                     console.log(e)
                 }
             }
-            getAnimal()
+            getTree()
         }
         const getCategories = async () => {
             try {
-                await axios.get('/categories')
+                await axios.get('/treeCategories')
                     .then((res) => {
                         setCategories(res.data)
+                        setIsLoading(false)
                     })
             } catch (e) {
                 console.log(e)
@@ -57,24 +54,22 @@ const AnimalFormPage = () => {
     }, [id]);
     const onFormSubmitHandler = async (e) => {
         e.preventDefault()
-        const animal = {
+        const tree = {
             name,
             description,
-            species,
-            habitat,
-            "conversation_status": conservationStatus,
-            categoryId: selectedCategory,
+            treeCategoryId: selectedCategory,
+            scientificName,
             imageUrl: image
         }
         if (id) {
-            await axios.patch(`/animals/${id}`, animal)
+            await axios.patch(`/trees/${id}`, tree)
                 .then((res) => {
-                    navigate(`/animals`, {state: {message: {success: `${res.data.name} edited successfully!`}}});
+                    navigate(`/trees`, {state: {message: {success: `${res.data.name} edited successfully!`}}});
                 })
         } else {
-            await axios.post('/animals', animal)
+            await axios.post('/trees', tree)
                 .then((res) => {
-                    navigate(`/animals`, {state: {message: {success: `${res.data.name} created successfully!`}}});
+                    navigate(`/trees`, {state: {message: {success: `${res.data.name} created successfully!`}}});
                 })
         }
     }
@@ -95,46 +90,31 @@ const AnimalFormPage = () => {
                         onStateChange={setImage}
                     />
                     <TextInputLabeled
-                        labelName='Animal name'
+                        labelName='Tree name'
                         id='name'
                         name='name'
                         type='text'
                         stateValue={name}
                         onStateChange={setName}
                     />
+                    <TextInputLabeled
+                        labelName='Tree scientific name'
+                        id='scientificName'
+                        name='scientificName'
+                        type='text'
+                        stateValue={scientificName}
+                        onStateChange={setScientificName}
+                    />
                     <TextAreaLabeled
-                        labelName='Animal description'
+                        labelName='Tree description'
                         id='description'
                         name='description'
                         stateValue={description}
                         onStateChange={setDescription}
                     />
-                    <TextInputLabeled
-                        labelName='Species'
-                        id='species'
-                        name='species'
-                        type='text'
-                        stateValue={species}
-                        onStateChange={setSpecies}
-                    />
-                    <TextInputLabeled
-                        labelName='Habitat'
-                        id='habitat'
-                        name='habitat'
-                        type='text'
-                        stateValue={habitat}
-                        onStateChange={setHabitat}
-                    />
-                    <TextInputLabeled
-                        labelName='Conversation status'
-                        id='conversation-status'
-                        name='conversation-status'
-                        type='text'
-                        stateValue={conservationStatus}
-                        onStateChange={setConversationStatus}
-                    />
+
                     <SelectInputLabeled
-                        labelName='Animal categories'
+                        labelName='Tree categories'
                         id='categories'
                         name='categories'
                         data={categories}
@@ -149,4 +129,4 @@ const AnimalFormPage = () => {
         </ContainerComponent>
     )
 }
-export default AnimalFormPage
+export default TreesFormPage
