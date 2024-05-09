@@ -66,6 +66,7 @@ const TreePage = () => {
                                 url='/trees'
                                 navigate={navigate}
                                 backLink='/trees'
+                                editUrl={`/trees/${id}/edit`}
                             />
                                 <img className={styles.treeImage} src={imageUrl}/>
                                 {treeCategory.id && (
