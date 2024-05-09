@@ -1,9 +1,11 @@
 .pageTitle {
+  position: relative;
   text-align: center;
+  margin: 0;
+  padding: 20px 0;
 }
 
 .description {
-  text-align: center;
   padding: 0 10px;
 }
 

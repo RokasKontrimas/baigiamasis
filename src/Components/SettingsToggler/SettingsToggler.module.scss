@@ -1,0 +1,16 @@
+.settings {
+  padding-left: 10px;
+  padding-top: 20px;
+  transition: ease 0.1s;
+
+  &:hover {
+    transition: ease 0.15s;
+    color: blue;
+    cursor: pointer;
+
+  }
+}
+
+.isToggled {
+  color: blue;
+}

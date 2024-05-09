@@ -3,13 +3,7 @@
 
 .wrapper {
   text-align: center;
-  width: 400px;
-  @include responsive.md {
-    width: 250px;
-  }
-  @include responsive.lg {
-    width: 350px;
-  }
+  width: fit-content;
   height: 100%;
   margin-top: 15px;
 }

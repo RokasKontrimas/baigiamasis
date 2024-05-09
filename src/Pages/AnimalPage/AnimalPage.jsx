@@ -1,18 +1,22 @@
 import styles from './AnimalPage.module.scss'
 import {useEffect, useState} from "react";
-import {Link, useParams} from "react-router-dom";
+import {Link, useNavigate, useParams} from "react-router-dom";
 import axios from "../../axios.jsx";
 import ContainerComponent from "../../Components/ContainerComponent/ContainerComponent.jsx";
 import LoadingComponent from "../../Components/LoadingComponent/LoadingComponent.jsx";
 import RelatedItemsComponent from "../../Components/RelatedItemsComponent/RelatedItemsComponent.jsx";
 import {sortData} from "../../Helpers/Helpers.jsx";
+import ItemSettingsComponent from "../../Components/ItemSettingsComponent/ItemSettingsComponent.jsx";
+import SettingsToggler from "../../Components/SettingsToggler/SettingsToggler.jsx";
 
 const AnimalPage = () => {
     const [animal, setAnimal] = useState('')
     const [category, setCategory] = useState('')
     const [isLoading, setIsLoading] = useState(true)
+    const [isToggled, setIsToggled] = useState(false)
     const [relatedAnimals, setRelatedAnimals] = useState([])
     const {id} = useParams()
+    const navigate = useNavigate()
     const {name, species, imageUrl, habitat, conservation_status, description, categoryId} = animal
 
     useEffect(() => {
@@ -38,12 +42,31 @@ const AnimalPage = () => {
 
         fetchAnimal();
     }, [id]);
+    const settingsToggleHandler = (e) => {
+        e.preventDefault()
+        setIsToggled(prevIsToggled => !prevIsToggled);
+    }
     return (
         <ContainerComponent>
             {isLoading ? (<LoadingComponent/>) : (
                 <>
                     <div className={styles.animalWrapper}>
-                        <h1 className={styles.animalName}>{name}</h1>
+                        <div style={{position: "relative"}}>
+                            <h1 className={styles.animalName}>
+                                {name}
+                                <SettingsToggler
+                                    handleSettingsToggle={settingsToggleHandler}
+                                    isToggled={isToggled}
+                                />
+                            </h1>
+                        </div>
+                        <ItemSettingsComponent
+                            isToggled={isToggled}
+                            url='/animals'
+                            item={animal}
+                            navigate={navigate}
+                            backLink='/trees/categories'
+                        />
                         <img className={styles.animalImage} src={imageUrl}/>
                         <Link to={`/category/${categoryId}`}>{category.name}</Link>
                         <div className={styles.animalInformation}>
@@ -57,11 +80,11 @@ const AnimalPage = () => {
                         </div>
                     </div>
                     {relatedAnimals.length > 0 && (
-                <RelatedItemsComponent
-                    data={relatedAnimals}
-                    url='animal'
-                    title='Related animals'
-                />
+                        <RelatedItemsComponent
+                            data={relatedAnimals}
+                            url='animal'
+                            title='Related animals'
+                        />
                     )}
                 </>
 

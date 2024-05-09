@@ -4,9 +4,14 @@ import ContainerComponent from "../../Components/ContainerComponent/ContainerCom
 import LoadingComponent from "../../Components/LoadingComponent/LoadingComponent.jsx";
 import TreeCategoriesList from "../../Components/TreesCategoriesList/TreeCategoriesList.jsx";
 import styles from './TreeCategoriesPage.module.scss'
+import ToastMessage from "../../Components/ToastMessage/ToastMessage.jsx";
+import {useLocation} from "react-router-dom";
+
 const TreeCategoriesPage = () => {
     const [categories, setCategories] = useState([])
     const [isLoading, setIsLoading] = useState(true)
+    const location = useLocation()
+
     useEffect(() => {
         const getCategories = async () => {
             try {
@@ -33,7 +38,11 @@ const TreeCategoriesPage = () => {
                     />
                 </>
             )}
-
+            {location.state && (
+                <ToastMessage
+                    state={location.state.message}
+                />
+            )}
         </ContainerComponent>
     )
 }

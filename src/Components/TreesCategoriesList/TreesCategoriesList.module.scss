@@ -3,6 +3,7 @@
 
 .treeCategoriesWrapper {
   display: grid;
+  place-items: center;
   @include responsive.sm {
     grid-template-columns: 1fr;
     padding: 0 10px;
