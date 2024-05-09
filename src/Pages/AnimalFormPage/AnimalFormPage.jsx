@@ -16,7 +16,7 @@ const AnimalFormPage = () => {
     const [conservationStatus, setConversationStatus] = useState('')
     const [description, setDescription] = useState('');
     const [categories, setCategories] = useState([])
-    const [image,setImage] = useState('')
+    const [image, setImage] = useState('')
     const [selectedCategory, setSelectedCategory] = useState('default')
     const navigate = useNavigate()
     const [isLoading, setIsLoading] = useState(true)
@@ -48,6 +48,7 @@ const AnimalFormPage = () => {
                 await axios.get('/categories')
                     .then((res) => {
                         setCategories(res.data)
+                        setIsLoading(false)
                     })
             } catch (e) {
                 console.log(e)
@@ -94,6 +95,11 @@ const AnimalFormPage = () => {
                         stateValue={image}
                         onStateChange={setImage}
                     />
+                    <>
+                        {image.length > 0 && (
+                            <img src={image} width="300"/>
+                        )}
+                    </>
                     <TextInputLabeled
                         labelName='Animal name'
                         id='name'
@@ -144,8 +150,10 @@ const AnimalFormPage = () => {
                     <button disabled={selectedCategory === 'default'}
                             className={styles.btn}> {id ? ('Save changes') : ('Create')}</button>
 
+
                 </form>
             )}
+
         </ContainerComponent>
     )
 }

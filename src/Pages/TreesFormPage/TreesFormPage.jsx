@@ -89,6 +89,11 @@ const TreesFormPage = () => {
                         stateValue={image}
                         onStateChange={setImage}
                     />
+                    <>
+                        {image.length > 0 && (
+                            <img src={image} width="300"/>
+                        )}
+                    </>
                     <TextInputLabeled
                         labelName='Tree name'
                         id='name'
