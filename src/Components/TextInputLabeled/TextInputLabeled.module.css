@@ -14,5 +14,8 @@
   outline: none;
   box-shadow: 0 0 5px black;
 }
+.formControl .errorText {
+  color: red;
+}
 
 /*# sourceMappingURL=TextInputLabeled.module.css.map */

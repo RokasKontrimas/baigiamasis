@@ -49,10 +49,14 @@ const WelcomePage = () => {
             <h1 className={styles.subTitle}>Animal categories</h1>
             <div className={styles.categoriesWrapper}>
                 {categories.map((category) => {
-                    const slug = category.name.toLowerCase()
-                    return <Link className={styles.categoryItem} key={category.id} to={`/categories/${category.id}/${slug}`}>
-                        {category.name}
-                    </Link>
+                    return <>
+                        {category.name.length > 0 && (
+                            <Link className={styles.categoryItem} key={category.id}
+                                  to={`/animals/category/${category.id}`}>
+                                {category.name}
+                            </Link>
+                        )}
+                    </>
                 })}
             </div>
         </div>

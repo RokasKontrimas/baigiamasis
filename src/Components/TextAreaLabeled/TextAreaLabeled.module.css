@@ -18,4 +18,8 @@
   box-shadow: 0 0 5px black;
 }
 
+.errorText {
+  color: red;
+}
+
 /*# sourceMappingURL=TextAreaLabeled.module.css.map */
