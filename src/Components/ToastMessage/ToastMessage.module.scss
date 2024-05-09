@@ -1,0 +1,51 @@
+@use '../../../src/styles/partials/responsive';
+.wrapper {
+  position: fixed;
+  top: 70px;
+  right: 0;
+  max-width: 250px;
+  min-height: 100px;
+  @include responsive.toast {
+    background-color: rgba(169, 167, 167, 1);
+  }
+
+  background-color: rgba(169, 167, 167, 0.5);
+
+  z-index: 100;
+  padding: 10px 5px;
+  opacity: 1;
+  display: flex;
+  transition: opacity 0.5s ease;
+  align-items: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: -2px 3px 2px rgba(0, 0, 0, 1);
+
+  & .messageContent {
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+    white-space: normal;
+
+    & i {
+      font-size: 20px;
+      &.success {
+        color: green;
+      }
+      &.warning {
+        color: red;
+      }
+    }
+
+    & p {
+      margin: 0;
+      font-size: 18px;
+    }
+  }
+}
+
+.visible {
+  opacity: 0;
+  transition-delay: 0.5s;
+  pointer-events: none;
+}

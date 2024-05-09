@@ -1,3 +1,9 @@
+.pageTitle {
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+}
+
 .animalWrapper {
   display: flex;
   flex-direction: column;
@@ -44,10 +50,6 @@
 .animalConservation span {
   font-weight: bold;
   margin-right: 5px;
-}
-
-.pageTitle {
-  text-align: center;
 }
 
 /*# sourceMappingURL=AnimalPage.module.css.map */

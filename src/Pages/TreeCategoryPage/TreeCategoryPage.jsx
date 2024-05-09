@@ -1,10 +1,12 @@
 import {useEffect, useState} from 'react'
-import {Link, useParams} from "react-router-dom";
+import {Link, useNavigate, useParams} from "react-router-dom";
 import axios from "../../axios.jsx";
 import ContainerComponent from "../../Components/ContainerComponent/ContainerComponent.jsx";
 import LoadingComponent from "../../Components/LoadingComponent/LoadingComponent.jsx";
 import styles from './TreeCategoryPage.module.scss'
 import {Carousel} from "react-responsive-carousel";
+import SettingsToggler from "../../Components/SettingsToggler/SettingsToggler.jsx";
+import ItemSettingsComponent from "../../Components/ItemSettingsComponent/ItemSettingsComponent.jsx";
 
 const TreeCategoryPage = () => {
     const {id} = useParams()
@@ -12,6 +14,8 @@ const TreeCategoryPage = () => {
     const [category, setCategory] = useState('');
     const [trees, setTrees] = useState([])
     const [newTrees, setNewTrees] = useState([])
+    const [isToggled,setIsToggled] = useState(false)
+    const navigate = useNavigate()
     useEffect(() => {
         const getCategory = async () => {
             try {
@@ -48,6 +52,10 @@ const TreeCategoryPage = () => {
             setNewTrees([]);
         }
     }, [trees]);
+    const settingsToggleHandler = (e) => {
+        e.preventDefault()
+        setIsToggled(prevIsToggled => !prevIsToggled);
+    }
     return (
         <>
             {isLoading ? (
@@ -55,8 +63,20 @@ const TreeCategoryPage = () => {
             ) : (
                 <div>
                     <div className={styles.pageIntro}>
-                        <h1>{category.name}</h1>
+                        <h1>{category.name}
+                            <SettingsToggler
+                                isToggled={isToggled}
+                                handleSettingsToggle={settingsToggleHandler}
+                            />
+                        </h1>
                         <p>{category.description}</p>
+                    <ItemSettingsComponent
+                        isToggled={isToggled}
+                        url='/treeCategories'
+                        item={category}
+                        navigate={navigate}
+                        backLink='/trees/categories'
+                    />
                     </div>
                     <Carousel
                         showArrows={false}

@@ -6,6 +6,8 @@ import styles from './TreePage.module.scss'
 import LoadingComponent from "../../Components/LoadingComponent/LoadingComponent.jsx";
 import RelatedItemsComponent from "../../Components/RelatedItemsComponent/RelatedItemsComponent.jsx";
 import {deleteItemHandler, sortData} from "../../Helpers/Helpers.jsx";
+import ItemSettingsComponent from "../../Components/ItemSettingsComponent/ItemSettingsComponent.jsx";
+import SettingsToggler from "../../Components/SettingsToggler/SettingsToggler.jsx";
 
 const TreePage = () => {
     const {id} = useParams()
@@ -38,7 +40,6 @@ const TreePage = () => {
     }, []);
     const settingsToggleHandler = (e) => {
         e.preventDefault()
-        console.log(isToggled)
         setIsToggled(prevIsToggled => !prevIsToggled);
     }
     return (
@@ -51,19 +52,24 @@ const TreePage = () => {
                         <>
                             <div className={styles.treeWrapper}>
                                 <div style={{position: "relative"}}>
-                                    <h1>{name}<i onClick={(e) => (settingsToggleHandler(e))}
-                                                 className={`fa fa-wrench ${styles.settings} ${isToggled ? (styles.isToggled) : ''}`}></i>
+                                    <h1>
+                                        {name}
+                                        <SettingsToggler
+                                            isToggled={isToggled}
+                                            handleSettingsToggle={settingsToggleHandler}
+                                        />
                                     </h1>
                                 </div>
-                                {isToggled && (
-                                    <div className={styles.settingsItems}>
-                                        <i onClick={() => deleteItemHandler('/trees',tree,navigate)} className={`fa fa-trash`}></i>
-                                        <i className={`fa fa-edit`}></i>
-                                    </div>
-                                )}
+                            <ItemSettingsComponent
+                                isToggled={isToggled}
+                                item={tree}
+                                url='/trees'
+                                navigate={navigate}
+                                backLink='/trees'
+                            />
                                 <img className={styles.treeImage} src={imageUrl}/>
                                 {treeCategory.id && (
-                                    <Link to={`/category/${treeCategory.id}`}>{treeCategory.name}</Link>
+                                    <Link to={`/trees/category/${treeCategory.id}`}>{treeCategory.name}</Link>
                                 )}
                                 <div className={styles.treeInformation}>
                                     <p>{description}</p>

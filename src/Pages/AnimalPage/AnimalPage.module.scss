@@ -1,6 +1,11 @@
 @use '../../../src/styles/partials/variables';
 @use '../../../src/styles/partials/responsive';
 
+.pageTitle {
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+}
 .animalWrapper {
   display: flex;
   flex-direction: column;
@@ -49,9 +54,6 @@
   margin-right: 5px;
 }
 
-.pageTitle {
-  text-align: center;
-}
 
 
 

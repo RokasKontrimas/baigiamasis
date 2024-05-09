@@ -5,25 +5,16 @@ import AnimalsListComponent from "../../Components/AnimalsListComponent/AnimalsL
 import styles from './AnimalsPage.module.scss'
 import LoadingComponent from "../../Components/LoadingComponent/LoadingComponent.jsx";
 import {getData} from "../../Helpers/Helpers.jsx";
+import ToastMessage from "../../Components/ToastMessage/ToastMessage.jsx";
+import {useLocation} from "react-router-dom";
 
 const AnimalsPage = () => {
     const [animals, setAnimals] = useState([])
     const [isLoading, setIsLoading] = useState(true)
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const animalsData = await getData('animals');
-                console.log(animalsData);
-            } catch (error) {
-                console.error('Error fetching data:', error);
-            }
-        }
-
-        fetchData();
-    }, []);
+    const location = useLocation()
     useEffect(() => {
         const fetchAnimals = async () => {
-            await axios.get('/animals?_embed=category').then((res) => {
+            await axios.get('/animals?_embed=category&_embed=relatedAnimals').then((res) => {
                 setAnimals(res.data)
                 setIsLoading(false)
             })
@@ -39,6 +30,11 @@ const AnimalsPage = () => {
                     <AnimalsListComponent
                         animals={animals}
                     />
+                    {location.state && (
+                        <ToastMessage
+                            state={location.state.message}
+                        />
+                    )}
                 </>
             )}
         </ContainerComponent>

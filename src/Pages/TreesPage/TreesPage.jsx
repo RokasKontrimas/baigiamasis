@@ -5,7 +5,7 @@ import TreesListComponent from "../../Components/TreesListComponent/TreesListCom
 import InfiniteScroll from "react-infinite-scroll-component";
 import styles from './TreesPage.module.scss'
 import {useLocation} from "react-router-dom";
-
+import ToastMessage from "../../Components/ToastMessage/ToastMessage.jsx";
 
 
 const TreesPage = () => {
@@ -15,7 +15,6 @@ const TreesPage = () => {
     const [hasMore, setHasMore] = useState(true);
     const [loadedTreeIds, setLoadedTreeIds] = useState([]);
     const location = useLocation();
-    console.log(location)
 
     useEffect(() => {
         const getTrees = async () => {
@@ -42,14 +41,6 @@ const TreesPage = () => {
 
         getTrees();
     }, [page]);
-
-
-    const test = async () => {
-        await axios.get('relatedTrees').then((res) => {
-            console.log(res.data.length)
-        })
-    }
-    test()
     const fetchMoreData = () => {
         setPage(prevPage => prevPage + 1);
     }
@@ -69,6 +60,12 @@ const TreesPage = () => {
             ) : (
                 <h2>Sorry, nothing to show... :(</h2>
             )}
+            {location.state && (
+                <ToastMessage
+                    state={location.state.message}
+                />
+            )}
+
         </ContainerComponent>
     )
 }

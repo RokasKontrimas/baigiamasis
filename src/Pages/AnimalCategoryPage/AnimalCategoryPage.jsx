@@ -1,10 +1,12 @@
-import {Link, useParams} from "react-router-dom";
+import {Link, useNavigate, useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
 import axios from "../../axios.jsx";
 import LoadingComponent from "../../Components/LoadingComponent/LoadingComponent.jsx";
 import {Carousel} from "react-responsive-carousel";
 import styles from './AnimalCategoryPage.module.scss';
 import ContainerComponent from "../../Components/ContainerComponent/ContainerComponent.jsx";
+import SettingsToggler from "../../Components/SettingsToggler/SettingsToggler.jsx";
+import ItemSettingsComponent from "../../Components/ItemSettingsComponent/ItemSettingsComponent.jsx";
 
 const AnimalCategoryPage = () => {
     const {id} = useParams();
@@ -12,6 +14,8 @@ const AnimalCategoryPage = () => {
     const [newAnimals, setNewAnimals] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     const [selectedCategory, setSelectedCategory] = useState('')
+    const [isToggled, setIsToggled] = useState(false)
+    const navigate = useNavigate()
 
     useEffect(() => {
         const fetchData = async () => {
@@ -50,8 +54,10 @@ const AnimalCategoryPage = () => {
             setNewAnimals([]);
         }
     }, [animals]);
-
-
+    const settingsToggleHandler = (e) => {
+        e.preventDefault()
+        setIsToggled(prevIsToggled => !prevIsToggled);
+    }
 
     return (
         <>
@@ -59,8 +65,24 @@ const AnimalCategoryPage = () => {
                 <LoadingComponent/>
             ) : (
                 <>
-                    <h1 className={styles.pageTitle}>{selectedCategory.name}</h1>
-                    <p className={styles.description}>{selectedCategory.description}</p>
+                    <div className={styles.pageTitle}>
+                        <h1>
+                            {selectedCategory.name}
+                            <SettingsToggler
+                                isToggled={isToggled}
+                                handleSettingsToggle={settingsToggleHandler}
+                            />
+                        </h1>
+                        <p className={styles.description}>{selectedCategory.description}</p>
+                        <ItemSettingsComponent
+                            url='/categories'
+                            item={selectedCategory}
+                            isToggled={isToggled}
+                            navigate={navigate}
+                            backLink='/animals/categories'
+                        />
+                    </div>
+
                     {animals && (
                         <Carousel
                             showArrows={false}
