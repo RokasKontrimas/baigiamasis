@@ -1,0 +1,21 @@
+.formControl {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.formControl textarea {
+  resize: vertical;
+  min-width: 200px;
+  min-height: 100px;
+  height: fit-content;
+  width: fit-content;
+  padding: 5px 3px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.formControl textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px black;
+}
+
+/*# sourceMappingURL=TextAreaLabeled.module.css.map */
