@@ -39,7 +39,7 @@
   "relatedAnimals": [
     {
       "id": "7f79",
-      "counter": 55,
+      "counter": 56,
       "animalId": "1"
     },
     {
@@ -275,12 +275,13 @@
     {
       "id": "9",
       "imageUrl": "https://assets.newatlas.com/dims4/default/b4898f0/2147483647/strip/true/crop/1920x1080+0+0/resize/1920x1080!/quality/90/?url=http%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2Farchive%2Fblue-whale-1.jpg",
-      "name": "Blue Whale",
+      "name": "Blue Whalees",
       "species": "Balaenoptera musculus",
       "habitat": "Oceans worldwide",
       "conservation_status": "Endangered",
       "description": "The blue whale is the largest animal on Earth. They are marine mammals and feed primarily on krill. They are known for their immense size and distinctive blue-gray color.",
-      "categoryId": "7"
+      "categoryId": "7",
+      "conversation_status": "Endangered"
     },
     {
       "id": "10",

@@ -76,6 +76,8 @@ const TreeCategoryPage = () => {
                         item={category}
                         navigate={navigate}
                         backLink='/trees/categories'
+                        editUrl={`/trees/category/${id}/edit`}
+
                     />
                     </div>
                     <Carousel

@@ -12,6 +12,7 @@ import TreeCategoriesPage from "./Pages/TreeCategoriesPage/TreeCategoriesPage.js
 import TreeCategoryPage from "./Pages/TreeCategoryPage/TreeCategoryPage.jsx";
 import AnimalCategoryFormPage from "./Pages/AnimalCategoryFormPage/AnimalCategoryFormPage.jsx";
 import TreeCategoryFormPage from "./Pages/TreeCategoryFormPage/TreeCategoryFormPage.jsx";
+import AnimalFormPage from "./Pages/AnimalFormPage/AnimalFormPage.jsx";
 
 function App() {
 
@@ -25,6 +26,8 @@ function App() {
                 <Route path='/animals/category/:id' element={<CategoryPage/>}/>
                 <Route path='/animals/category/create' element={<AnimalCategoryFormPage/>}/>
                 <Route path='/animals/category/:id/edit' element={<AnimalCategoryFormPage/>}/>
+                <Route path='/animals/create' element={<AnimalFormPage/>}/>
+                <Route path='/animals/:id/edit' element={<AnimalFormPage/>}/>
                 <Route path='/animals' element={<AnimalsPage/>}/>
                 <Route path='/animal/:id' element={<AnimalPage/>}/>
                 <Route path="/trees" element={<TreesPage/>}/>

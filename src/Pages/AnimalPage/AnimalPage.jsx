@@ -66,6 +66,7 @@ const AnimalPage = () => {
                             item={animal}
                             navigate={navigate}
                             backLink='/trees/categories'
+                            editUrl={`/animals/${id}/edit`}
                         />
                         <img className={styles.animalImage} src={imageUrl}/>
                         <Link to={`/category/${categoryId}`}>{category.name}</Link>

@@ -46,7 +46,7 @@ const HeaderComponent = () => {
                         <div className={styles.dropdownContent}>
                             {returnNavLink('animals/category/create', 'Animal category', styles.active)}
                             {returnNavLink('trees/category/create', 'Tree category', styles.active)}
-                            {returnNavLink('', 'Animal', styles.active)}
+                            {returnNavLink('animals/create', 'Animal', styles.active)}
                             {returnNavLink('', 'Tree', styles.active)}
                         </div>
                     </li>

@@ -80,6 +80,7 @@ const AnimalCategoryPage = () => {
                             isToggled={isToggled}
                             navigate={navigate}
                             backLink='/animals/categories'
+                            editUrl={`/animals/category/${id}/edit`}
                         />
                     </div>
 
