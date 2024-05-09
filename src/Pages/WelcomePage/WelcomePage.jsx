@@ -2,7 +2,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import {Carousel} from "react-responsive-carousel";
 import styles from './WelcomePage.module.scss'
 import {Link} from "react-router-dom";
-import {useEffect, useState} from "react";
+import {Fragment, useEffect, useState} from "react";
 import axios from "../../axios.jsx";
 
 const WelcomePage = () => {
@@ -14,7 +14,6 @@ const WelcomePage = () => {
     }, []);
     return (
         <div>
-
             <div className={styles.wrapper}>
                 <Carousel
                     showArrows={false}
@@ -46,17 +45,17 @@ const WelcomePage = () => {
                 <Link className={styles.btn} to='/animals'>Start journey</Link>
 
             </div>
-            <h1 className={styles.subTitle}>Animal categories</h1>
+            <h1 className={`text-3xl font-bold underline  ${styles.subTitle}`}>Animal categories</h1>
             <div className={styles.categoriesWrapper}>
                 {categories.map((category) => {
-                    return <>
+                    return <Fragment key={category.id}>
                         {category.name.length > 0 && (
-                            <Link className={styles.categoryItem} key={category.id}
+                            <Link className={styles.categoryItem}
                                   to={`/animals/category/${category.id}`}>
                                 {category.name}
                             </Link>
                         )}
-                    </>
+                    </Fragment>
                 })}
             </div>
         </div>

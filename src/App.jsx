@@ -19,6 +19,7 @@ function App() {
 
     return (
         <>
+
             <HeaderComponent/>
             <Routes>
                 <Route path='/' element={<WelcomePage/>}/>
