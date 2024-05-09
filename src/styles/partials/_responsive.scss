@@ -15,7 +15,11 @@
     @content;
   }
 }
-
+@mixin toast() {
+  @media screen and (max-width: 700px) {
+    @content;
+  }
+} 
 @mixin xl() {
   @media screen and (min-width: 1300px) {
     @content;
