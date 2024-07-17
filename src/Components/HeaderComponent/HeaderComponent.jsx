@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import {NavLink} from 'react-router-dom';
-// import Logo from '../../assets/logo.png';
+import Logo from '../../assets/logo.png';
 import styles from './HeaderComponent.module.scss';
 
 const HeaderComponent = () => {
@@ -33,9 +33,9 @@ const HeaderComponent = () => {
             )}
             <nav>
                 <div className={styles.logoWrapper}>
-                    <NavLink to='/'>
-                        <img src={Logo} alt='Logo image'/>
-                    </NavLink>
+                    {/*<NavLink to='/'>*/}
+                    {/*    <img src={Logo} alt='Logo image'/>*/}
+                    {/*</NavLink>*/}
                 </div>
 
                 <ul>
