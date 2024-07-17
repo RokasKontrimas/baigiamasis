@@ -27,17 +27,15 @@ const HeaderComponent = () => {
         <header className={isNavOpen ? (`${styles['open-nav']} ${styles.navPadding}`) : ''}>
             {!isNavOpen && (
                 <div className={styles.mobileLogoWrapper}>
-                    <NavLink to='/'>
-                        <img src={`https://rokaskontrimas.github.io/baigiamasis/${Logo}`} alt='Logo image'/>
-                    </NavLink>
+
 
                 </div>
             )}
             <nav>
                 <div className={styles.logoWrapper}>
-                    <NavLink to='/'>
-                        <img src={Logo} alt='Logo image'/>
-                    </NavLink>
+                    {/*<NavLink to='/'>*/}
+                    {/*    <img src={Logo} alt='Logo image'/>*/}
+                    {/*</NavLink>*/}
                 </div>
 
                 <ul>
