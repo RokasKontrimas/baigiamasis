@@ -69,12 +69,17 @@
       "id": "97db",
       "name": "asd",
       "description": "asd"
+    },
+    {
+      "id": "abbb",
+      "name": "asddas",
+      "description": "asdasd"
     }
   ],
   "relatedAnimals": [
     {
       "id": "7f79",
-      "counter": 57,
+      "counter": 58,
       "animalId": "1"
     },
     {
@@ -1247,7 +1252,7 @@
   "relatedTrees": [
     {
       "id": "cee1",
-      "counter": 38,
+      "counter": 39,
       "treeId": "1"
     },
     {

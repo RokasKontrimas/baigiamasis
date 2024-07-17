@@ -1,5 +1,4 @@
 import axios from "../axios.jsx";
-import {useNavigate} from "react-router-dom";
 
 export const createData = async (array, url) => {
     for (const item of array) {
@@ -42,14 +41,14 @@ export const sortData = async (url, desc, related) => {
 }
 export const deleteItemHandler = async (url, item, navigate, backLink) => {
     try {
-        // await axios.delete(`${url}/${item.id}`).then(() => {
+        await axios.delete(`${url}/${item.id}`).then(() => {
         if (backLink && backLink.length > 0) {
             navigate(backLink, {state: {message: {success: `${item.name} deleted successfully!`}}});
         } else {
             navigate(url, {state: {message: {success: `${item.name} deleted successfully!`}}});
 
         }
-        // });
+        });
     } catch (error) {
         console.log(error);
     }
