@@ -28,7 +28,7 @@ const HeaderComponent = () => {
             {!isNavOpen && (
                 <div className={styles.mobileLogoWrapper}>
                     <NavLink to='/'>
-                        <img src={Logo} alt='Logo image'/>
+                        <img src={`https://rokaskontrimas.github.io/baigiamasis/${Logo}`} alt='Logo image'/>
                     </NavLink>
 
                 </div>
