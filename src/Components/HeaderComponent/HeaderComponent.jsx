@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import {NavLink} from 'react-router-dom';
-import Logo from '../../assets/logo.png';
+// import Logo from '../../assets/logo.png';
 import styles from './HeaderComponent.module.scss';
 
 const HeaderComponent = () => {
@@ -27,9 +27,7 @@ const HeaderComponent = () => {
         <header className={isNavOpen ? (`${styles['open-nav']} ${styles.navPadding}`) : ''}>
             {!isNavOpen && (
                 <div className={styles.mobileLogoWrapper}>
-                    <NavLink to='/'>
-                        <img src={`https://rokaskontrimas.github.io/baigiamasis/${Logo}`} alt='Logo image'/>
-                    </NavLink>
+
 
                 </div>
             )}
